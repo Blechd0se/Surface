@@ -1,0 +1,439 @@
+/* CSS Document */
+/* Allgemeines Layout */
+
+body {
+	margin-top : 0;
+	margin-left : 0;
+	margin-right : 0;
+	margin-bottom : 0;
+	line-height : 18px;
+	font-family: 'Signika'; /* Falls noch keine Schriftart gesetzt wurde */
+	height: 1200px;
+	-webkit-font-smoothing: antialiased; /* Anti-Aliasing */
+}
+
+.MainBackground
+{
+	display: block;
+	width: 100%;
+}
+.MainSheet
+{
+	position: absolute;
+	left: 125px;
+	right: 125px;
+	display: inline-block;
+	min-height: inherit;
+	min-width: 1100px;                        /* Kann entfernt werden? */
+	z-index: 50;
+}
+.MenueRight
+{
+	position: absolute;
+	width: 100%;
+	background-color: #1E1E1E;
+	background: -webkit-gradient(linear,
+	  left top, left bottom,
+	  color-stop(0, #1E1E1E),
+	  color-stop(0.17, #3A3A3A),
+	  color-stop(0.83, #3A3A3A),
+	  color-stop(0.99, #1E1E1E),
+	  color-stop(1, #3A3A3A));
+	background:-moz-radial-gradient(center, #3A3A3A, #1E1E1E); /* Firefox */
+	background:-o-radial-gradient(center, #3A3A3A, #1E1E1E); /* Opera */
+	background:-ms-radial-gradient(center, #3A3A3A, #1E1E1E); /* IE10 */
+	height: 35px;
+}
+.MenueRight li
+{
+	display: inline;   
+	list-style-type: none;
+ 	padding: 2px;
+	margin: 0;
+	float: right;
+}
+.MenueRight a {
+	color: #FFF;                  
+ 	text-decoration: none; 
+}
+.MenueRight a:hover
+{
+	color: black;
+	background-color: #EDEDF8;
+}
+.MenueRight a:active
+{
+	background-color: #EDEDF8;
+}
+.MainHeading
+{
+	position: absolute;
+	float: left;
+	font-family: 'BebasNeueRegular';
+	padding: 5px;
+	margin-left: 5px;
+	background-image: url(../images/shadow.png);
+	background-repeat:repeat-x;
+	background-position: 0 100%; /* Schatten für andere Browser */
+	background-color: #FFF;
+	background: -webkit-gradient(linear,
+	  left top, left bottom,
+	  color-stop(0, #ebebeb),
+	  color-stop(0.17, #fff),
+	  color-stop(0.83, #fff),
+	  color-stop(0.99, #ebebeb),
+	  color-stop(1, #fff));
+	background:-moz-radial-gradient(center, #fff, #ebebeb); /* Firefox */
+	background:-o-radial-gradient(center, #fff, #ebebeb); /* Opera */
+	background:-ms-radial-gradient(center, #fff, #ebebeb);/* IE10 */
+}
+.MainHeading h1
+{
+	font-size: 46px;
+	letter-spacing: 2px;
+}
+.MainContent
+{
+	position: relative;
+	background-color: #FFF;
+	top: 60px;
+	height:auto !important;
+	height:100%;
+	margin: 30px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+}
+.MainMenue
+{
+	position: absolute;
+	background: #3a3a3a; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYTNhM2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWUxZTFlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	filter: none; /* IE9-Fix */
+	top: 140px;
+	background:-moz-radial-gradient(center, #3A3A3A, #1E1E1E); /* Firefox */
+	background:-webkit-radial-gradient(center, #3A3A3A, #1E1E1E); /* Chrome */
+	background:-o-radial-gradient(center, #3A3A3A, #1E1E1E); /* Opera */
+	background:-ms-radial-gradient(center, #3A3A3A, #1E1E1E); /* IE10 */
+	background: radial-gradient(center, #3A3A3A 0%,#1E1E1E 100%);
+	
+	 height: 40px;
+	 z-index: 5;
+}
+.MainMenue li
+{
+	display: inline;   
+}
+
+.Left 
+{
+	margin: 0;
+	float: left;
+	width: 17%;
+	display: block;
+}
+.Content, .Content_ext_right
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	float: left;
+	max-width: 60%;
+	min-width: 60%;
+	display: block;
+	padding: 10px 10px 10px 10px;
+	background-color: #FFF;
+	background: -webkit-gradient(linear,
+	  left top, left bottom,
+	  color-stop(0, #ebebeb),
+	  color-stop(0.17, #fff),
+	  color-stop(0.83, #fff),
+	  color-stop(0.99, #ebebeb),
+	  color-stop(1, #fff));
+	background:-moz-radial-gradient(center, #fff, #ebebeb); /* Firefox */
+	background:-o-radial-gradient(center, #fff, #ebebeb); /* Opera */
+	background:-ms-radial-gradient(center, #fff, #ebebeb);/* IE10 */
+}
+.Content_ext_right
+{
+	max-width: 75%;
+	min-width: 75%;
+}
+
+
+.Right
+{
+	margin: 0;
+	float: right;
+	width: 17%;
+	display: block;
+}
+.Footer
+{
+	position:relative;
+	margin: 20px 0px 20px 0px;
+	padding: 10px 10px 10px 10px;
+	background-color: #FFF;
+	top: 20px;
+	text-align: center;
+	clear: both;
+	display: block;
+}
+
+.RightPicture
+{
+	position: relative; 
+	display: inline-block;
+	width: 570px;
+	left: 530px;
+	top: 60px;
+	height: 200px;
+}
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	font-style: normal;
+  	font-weight: bold;
+	src: url('../fonts/BebasNeue-webfont.eot') format('eot'),
+		 url('../fonts/BebasNeue-webfont.woff') format('woff'),
+		 url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+		 url('../fonts/BebasNeue-webfont.svg') format('svg');	
+}
+@font-face {
+  font-family: 'Marmelad';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Marmelad-Regular.eot') format('eot'),
+  	   url('../fonts/Marmelad-Regular.woff') format('woff'),
+	   url('../fonts/Marmelad-Regular.ttf') format('truetype'),
+	   url('../fonts/Marmelad-Regular.svg') format('svg');	
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: bold;
+  src:  url('../fonts/Signika-Regular.eot') format('eot'),
+  		url('../fonts/Signika-Regular.woff') format('woff')
+		url('../fonts/Signika-Regular.ttf') format('truetype')
+		url('../fonts/Signika-Regular.svg') format('svg');
+}
+
+ /* Slider: */
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+
+.slides_container div.slide {
+	width:670px;
+	height:200px;
+	display:block;
+}
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	height:40px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:570px;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+.caption p
+{
+	color:#fff;
+}
+/*
+	Buttons Slider:
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:80px;
+	left:-15px;
+	width:12px;
+	height:22px;
+	display:block;
+	z-index:101;
+	border: none;
+}
+
+#slides .next {
+	left:538px;
+	border: none;
+}
+
+
+.pagination_new{
+	margin:10px auto 0;
+	width:100px;
+}
+
+.pagination_new li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination_new li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination_new li.current a {
+	background-position:0 -12px;
+}
+/* Ende Slider */
+
+/* Header */
+
+/* Top Level Menu */
+
+
+#header ul li {
+	display: block;
+	float: left;
+	width: 140px;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+#header ul li a {
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Sub Level Nav */
+#header ul li ul {
+	background: #F4F4F4; /* Standard ? */
+	border: 0px solid #000;
+	margin: 20px 0 0 0;
+	padding: 0 20px 0;
+	position: relative;
+	width: 120px;
+}
+
+#header ul li ul li {
+	border-bottom: 1px solid #CCC;
+	display: block;
+	float: none;
+	height: 14px;
+	padding: 8px 0;
+	text-align: left;
+	width: 126px;
+}
+
+#header ul li ul li a {
+	color: #1e5799;
+	text-shadow: none;
+}
+
+#header ul li ul li a:hover {
+	color: #000;
+}
+
+
+/* Pfeil: */
+.arrow {
+	background: url(../images/arrow.png) no-repeat;
+	border: 0;
+	display: none;
+	position: absolute;
+	top: -10px;
+	height: 11px;
+	width: 20px;
+	left: 10px;
+	text-indent: -9999px;
+	z-index: -1;
+}
+/* Ende Top Level */
+
+.date
+{
+	position:absolute;
+	left: 10px;
+	top: 5px;
+	color: #FFF;
+	font-size: 10px;
+	font-family: 'Marmelad', sans-serif;
+}
+.timer
+{
+	font-size: 10px;
+	line-height: 2px;
+}
+.login_text
+{
+	display: block;
+	float: right;
+	color: #FFF;
+	padding: 3px;
+	margin: auto;
+}
+.logout-button 
+{
+	position: absolute;
+	display: block;
+	float: right;
+	right: 10px;
+}
+
+#searching input {
+	background: #E6E6E6;
+	background: url(../images/ico-search.png) no-repeat right, -moz-linear-gradient(top,  #E6E6E6 0%, white 100%);
+	background: url(../images/ico-search.png) no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E6E6E6), color-stop(100%, white));
+	background: url(../images/ico-search.png) no-repeat right, -webkit-linear-gradient(top, #E6E6E6 0%, white 100%);
+	background: url(../images/ico-search.png) no-repeat right, -o-linear-gradient(top, #E6E6E6 0%, white 100%);
+	background: url(../images/ico-search.png) no-repeat right, -ms-linear-gradient(top, #E6E6E6 0%, white 100%);
+	background: url(../images/ico-search.png) no-repeat right, linear-gradient(top, #E6E6E6 0%, white 100%);
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px; 
+		-o-border-radius: 5px; 
+		-ms-border-radius: 5px; 
+}
+/* Fix für die Suche */
+div#searching div.moduletable {
+	padding-top: 0px;
+	background-color: #1E1E1E;
+	margin-top: 2px;
+}
+.module_content
+{
+	padding: 10px 20px 10px 20px;
+	min-width: 60%;
+	max-width: 60%;
+	float: left;
+	display: block;
+}
+.left_content {
+	margin: 0;
+	float: left;
+	min-width: 30%;
+	max-width: 30%;
+	display: block;
+}
+.main_content {
+	float: left;
+	display: block;
+	min-width: 30%;
+	max-width: 30%;
+	margin-left: 15px;
+}
+.right_content {
+	margin: 0;
+	float: right;
+	display: block;
+	min-width: 30%;
+	max-width: 30%;
+	margin-left: 5px;
+}

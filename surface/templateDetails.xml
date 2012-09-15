@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>Surface</name>
+	<creationDate>19.07.2012</creationDate>
+	<author>Blechdose</author>
+	<copyright>Copyright by Blechdose</copyright>
+	<authorEmail>info@blechdose-live.de</authorEmail>
+	<authorUrl>http://www.blechdose-live.de</authorUrl>
+	<version>1.0</version>
+	<description>
+	<![CDATA[
+	<script type="text/javascript">
+		$.noConflict();
+ 		function checkFormStatus() {	
+						if(jQuery('#jform_params_javascript_slider').val() == 1) {							
+							jQuery('#jform_params_javascript_slider_plugin_picture1-lbl,#jform_params_javascript_slider_plugin_picture1,#jform_params_javascript_slider_plugin_picture1_link-lbl,#jform_params_javascript_slider_plugin_picture1_link,#jform_params_javascript_slider_plugin_picture2-lbl,#jform_params_javascript_slider_plugin_picture2,#jform_params_javascript_slider_plugin_picture2_link,#jform_params_javascript_slider_plugin_picture2_link-lbl,#jform_params_javascript_slider_plugin_picture3-lbl,#jform_params_javascript_slider_plugin_picture3,#jform_params_javascript_slider_plugin_picture3_link,#jform_params_javascript_slider_plugin_picture3_link-lbl,#jform_params_anzeige_dauer,#jform_params_anzeige_dauer-lbl,#jform_params_javascript_slider_plugin_picture1_text,#jform_params_javascript_slider_plugin_picture1_text-lbl,#jform_params_javascript_slider_plugin_picture2_text,#jform_params_javascript_slider_plugin_picture2_text-lbl,#jform_params_javascript_slider_plugin_picture3_text,#jform_params_javascript_slider_plugin_picture3_text-lbl').fadeIn();							
+						}	else {										jQuery('#jform_params_javascript_slider_plugin_picture1-lbl,#jform_params_javascript_slider_plugin_picture1,#jform_params_javascript_slider_plugin_picture1_link-lbl,#jform_params_javascript_slider_plugin_picture1_link,#jform_params_javascript_slider_plugin_picture2-lbl,#jform_params_javascript_slider_plugin_picture2,#jform_params_javascript_slider_plugin_picture2_link,#jform_params_javascript_slider_plugin_picture2_link-lbl,#jform_params_javascript_slider_plugin_picture3-lbl,#jform_params_javascript_slider_plugin_picture3,#jform_params_javascript_slider_plugin_picture3_link,#jform_params_javascript_slider_plugin_picture3_link-lbl,#jform_params_anzeige_dauer,#jform_params_anzeige_dauer-lbl,#jform_params_javascript_slider_plugin_picture1_text,#jform_params_javascript_slider_plugin_picture1_text-lbl,#jform_params_javascript_slider_plugin_picture2_text,#jform_params_javascript_slider_plugin_picture2_text-lbl,#jform_params_javascript_slider_plugin_picture3_text,#jform_params_javascript_slider_plugin_picture3_text-lbl').fadeOut();
+						}
+						if(jQuery('#jform_params_image').val() == 2) {
+						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeIn();
+						}
+						else {
+						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
+						
+						}
+		}
+		jQuery(document).ready(function($) {
+		
+		if(jQuery('#jform_params_date-lbl')) {
+		
+					checkFormStatus();
+			
+		jQuery('#jform_params_javascript_slider,#jform_params_image').change(function(){				 
+						checkFormStatus();	
+				 
+				 	});	
+					}		
+  		});
+	</script>
+<br /><img src="../templates/surface/template_thumbnail.png" align="right" style="margin: 5px 5px 10px 10px;" />
+<h1> Surface Template Free</h1>
+<div style="font-size: 13px;">
+<br>Template by Blechdose, visit Blechdoses Seite for more Information.<br>
+Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdose-live.de/forum/16-designs-von-blechdose/691-faq-frequently-asked-questions-zu-den-templates#691">FAQ</a></p>    </b>
+<br /> <b><a href="http://www.blechdose-live.de/bug-tracker">Bugs?</a></b>
+ <br /><br /> <br />  <br /><br /> <br />
+<b><a href="http://www.blechdose-live.de/update/surface">www.blechdose-live.de</a> </b>
+<br>
+<p style=" float: left">Version aktuell:</p> <img border="0" src="http://blechdose-live.de/update/surface/required.png" alt="Ein Fehler ist aufgetreten!"/>
+</div>
+<div style=" float: right">
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=24ZKQH6ND2HKN" target="_blank"> <img alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." border="0" height="47" src="http://www.blechdose-live.de/update/paypal/spenden.gif" width="126" /></a> </div>
+<h3 style="clear: both;">Ihre Version:</h3>
+<font size="+0"><b>1.0.0 Beta for Joomla! 2.5</b> </font>
+<div style="margin: 0px 0px 0px 10px;">
+<ul>
+<li> <a href="http://www.blechdose-live.de/forum/34-how-tos/1359-how-to-template-einrichten#1359">[How-To] Set Up Your Template</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/forum/34-how-tos/1360-how-to-das-qaccordionq-suffix#1360">[How-To] Set the Accordion-Suffix</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/forum/34-how-tos/1362-how-to-der-slider#1362">[How-To] Change the Pictures of the Slider</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/forum/34-how-tos/1361-how-to-bilder-erst-beim-ansehen-laden#1361">[How-To] Load Pictures with Style!</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/forum/16-templates-von-blechdose/1363-lizenz-von-surface">License</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/forum/16-designs-von-blechdose/691-faq-frequently-asked-questions-zu-den-templates#691">You need help? Visit the FAQ!</a><br> </li>
+<li> <a href="http://www.blechdose-live.de/bug-tracker">Did you find a Bug?</a><br> </li>
+<li> <a href="http://demo.blechdose-live.de/">Visit a sample Page!</a><br> </li>
+</ul>
+</div>
+<br /><br />		
+]]>
+</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<filename>favicon.ico</filename>
+		<folder>html/</folder>
+		<folder>fonts/</folder>
+		<folder>css/</folder>
+		<folder>images/</folder>
+		<folder>lib/</folder>
+		<folder>js/</folder>
+		</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>copyright</position>
+		<position>debug</position>
+		<position>left</position>
+		<position>right</position>
+		<position>syndicate</position>
+		<position>user3</position>
+		<position>searchload</position>
+		<position>newsflashload</position>
+		<position>loginload</position>
+		<position>headermodule</position>
+		<position>footer</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+  </positions>	
+  <languages folder="lib/language">
+                <language tag="de-DE">de-DE/de-DE.tpl_surface.ini</language>
+				<language tag="en-GB">en-GB/en-GB.tpl_surface.ini</language>
+  </languages>
+   <config>
+                <fields name="params" addfieldpath="/templates/surface/lib/elements/">
+                <fieldset name="Content" description="" label="CONTENT">
+				<field type="asset" path="templates/surface/lib/admin/" />
+                <field name="date" type="radio" default="1" label="PARAM_DATE" description="DESC_PARAM_DATE">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>			 
+                 <field name="timerrun" type="radio" default="0" label="PARAM_TIMER" description="DESC_PARAM_TIMER">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="beta_warnung" type="radio" default="1" label="PARAM_BETA" description="DESC_PARAM_BETA">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="mainsheet_rounded" type="radio" default="0" label="PARAM_MAINSHEETROUNDED" description="DESC_PARAM_MAINSHEETROUNDED">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="page_title_default" type="radio" default="1" label="PARAM_TITLE_DEFAULT" description="DESC_PARAM_TITLE_DEFAULT">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="page_title" type="text" default="" label="PARAM_TITLE" description="DESC_PARAM_TITLE" size="40" />
+				<field name="size" type="text" default="12px" label="PARAM_SCHRIFT_FRONTEND" description="DESC_PARAM_SCHRIFT_FRONTEND"></field>
+				<field name="font_content" type="list" default="'Signika'" label="PARAM_FONTCONTENT" description="DESC_PARAM_FONTCONTENT">
+						<option value="'Signika'">OPTION_DEFAULT</option>
+                        <option value="Arial, Helvetica, Sans-Serif">OPTION_ARIAL</option>
+                        <option value="Times New Roman, Georgia, Times, Serif">OPTION_TIMES</option>
+						<option value="Trebuchet MS, Arial, Helvetica, Sans-Serif">OPTION_TREBUCHET_MS</option>
+						<option value="Verdana, Geneva, sans-serif">OPTION_VERDANA</option>
+						<option value="Tahoma, Geneva, sans-serif">OPTION_TAHOMA</option>
+                </field>
+				<field name="left_column" type="text" default="17%" label="PARAM_LEFT_COLUMN" description="DESC_PARAM_LEFT_COLUMN" size="20"></field>
+				<field name="right_column" type="text" default="17%" label="PARAM_RIGHT_COLUMN" description="DESC_PARAM_RIGHT_COLUMN" size="20"></field>
+				<field name="main_column" type="text" default="60%" label="PARAM_MAIN_COLUMN" description="DESC_PARAM_MAIN_COLUMN" size="20"></field>
+				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>
+				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
+				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
+				<field name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />	
+				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
+                        <option value="1">OPTION_DEFAULT</option>
+                       	<option value="2">OPTION_CSS3</option>
+                         <option value="3">OPTION_AUS</option>
+						 </field>
+				<field name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
+				<field name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
+              	<field hr="true" type="spacer" />
+                 <field name="ie_support" type="list" default="1" label="PARAM_IE" description="DESC_PARAM_IE">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+						<option value="2">OPTION_LEGACY</option>
+                </field>
+				  <field name="kompression" type="radio" default="0" label="PARAM_COMP" description="DESC_PARAM_COMP">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+
+    			</fieldset>
+				<fieldset name="javascripte" description="" label="JAVASCRIPTS">
+				<field name="fontsizeparam" type="radio" default="1" label="PARAM_FONTSIZE" description="DESC_PARAM_FONTSIZE">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                 </field>
+				 <field name="scrolling" type="radio" default="1" label="PARAM_SCROLL" description="DESC_PARAM_SCROLL">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                 </field>
+				 <field name="link_animation" type="radio" default="1" label="PARAM_LINK_ANIMATION" description="DESC_PARAM_LINK_ANIMATION">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="bild_animation" type="radio" default="0" label="PARAM_BILD_ANIMATION" description="DESC_PARAM_BILD_ANIMATION">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				 <field name="javascript" type="radio" default="1" label="PARAM_SCRIPT_LOAD" description="DESC_PARAM_SCRIPT_LOAD">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				<field name="mootools" type="radio" default="0" label="PARAM_SCRIPT_MOO" description="DESC_PARAM_SCRIPT_MOO">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
+				 
+				</fieldset>
+				<!-- Slider -->
+			 <fieldset name="javascript_slider_plugin" description="" label="JAVASCRIPT_SLIDER_PLUGIN">
+			 <field name="javascript_slider" type="list" default="1" label="PARAM_SLIDER" description="DESC_PARAM_SLIDER">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+						
+                </field>
+				<field name="javascript_slider_plugin_picture1" type="imagelist" default="slider1.jpg" label="PARAM_PLUGIN_SLIDER1" description="DESC_PARAM_PLUGIN_SLIDER1" directory="../templates/surface/images/slider/" />
+				<field name="javascript_slider_plugin_picture1_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER1_LINK" description="DESC_PARAM_PLUGIN_SLIDER1_LINK" size="40"></field>
+				<field name="javascript_slider_plugin_picture1_text" type="text" default="Sample Text" label="PARAM_PLUGIN_SLIDER1_TEXT" description="DESC_PARAM_PLUGIN_SLIDER1_TEXT" size="40"></field>
+				<field name="javascript_slider_plugin_picture2" type="imagelist" default="slider2.jpg" label="PARAM_PLUGIN_SLIDER2" description="DESC_PARAM_PLUGIN_SLIDER2" directory="../templates/surface/images/slider/" />
+				<field name="javascript_slider_plugin_picture2_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER2_LINK" description="DESC_PARAM_PLUGIN_SLIDER2_LINK" size="40" ></field>
+				<field name="javascript_slider_plugin_picture2_text" type="text" default="" label="PARAM_PLUGIN_SLIDER2_TEXT" description="DESC_PARAM_PLUGIN_SLIDER2_TEXT" size="40"></field>
+				<field name="javascript_slider_plugin_picture3" type="imagelist" default="slider3.jpg" label="PARAM_PLUGIN_SLIDER3" description="DESC_PARAM_PLUGIN_SLIDER3" directory="../templates/surface/images/slider/" />
+				<field name="javascript_slider_plugin_picture3_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER3_LINK" description="DESC_PARAM_PLUGIN_SLIDER3_LINK" size="40"></field>
+				<field name="javascript_slider_plugin_picture3_text" type="text" default="Lorum ipsorum Hanna Pastor" label="PARAM_PLUGIN_SLIDER3_TEXT" description="DESC_PARAM_PLUGIN_SLIDER3_TEXT" size="40"></field>
+			 <field name="anzeige_dauer" type="text" default="5000" label="PARAM_PLUGIN_SLIDER_ANZEIGE" description="DESC_PARAM_PLUGIN_SLIDER_ANZEIGE" size="20"></field>
+			 </fieldset>
+			<!-- Update -->
+			<fieldset name="surface_updates" addfieldpath="/templates/surface/lib/elements" label="SURFACE_UPDATES">
+			    <field type="update" name="surface_updates" /> 
+			</fieldset>
+  			</fields>
+        </config>
+</extension>

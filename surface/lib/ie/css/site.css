@@ -1,0 +1,60 @@
+.box
+{
+position: absolute;
+top: 200px;
+left: 25%;
+width: 38em;
+background: #9BD1FA;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+font-family:Verdana, Geneva, sans-serif;
+}
+.box h1, .box p {margin: 0 10px;}
+.box h1 {font-size:150%; color:#ffffff; }
+.box .top, .box .bottom{display:block;background: #FFFFFF;}
+.box .top b, .box .bottom b
+{
+  display:block;height: 1px; overflow: hidden; background: #9BD1FA;
+}
+.box .r1{margin: 0 5px;}
+.box .r2{margin: 0 3px;}
+.box .r3{margin: 0 2px;}
+.box .top .r4, .box .bottom .r4{margin: 0 1px;height: 2px;}
+.browserkasten
+{
+	position: absolute;
+	left: 150px;
+	top: 80px;
+}
+	
+.klasse1
+{
+	background: url(../images/browser_chrome.gif) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+.klasse2
+{
+	background: url(../images/browser_firefox.gif) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+.klasse3
+{
+	background: url(../images/browser_ie.gif) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+.klasse4
+{
+	background: url(../images/browser_opera.gif) no-repeat;
+	width: 100px;
+	height: 100px;
+}
+.klasse5
+{
+	background: url(../images/browser_safari.gif) no-repeat;
+	width: 100px;
+	height: 100px;
+}
