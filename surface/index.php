@@ -222,10 +222,14 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	</div>
 	
 	<!-- BEGINNE: Hintergrundfahne -->
-	<div class="ArrowLeft"></div>
-	<div class="StripeBackground"></div>
-	<!-- END: Hintergrundfahne --> 
 
+	<!-- END: Hintergrundfahne --> 
+		<div class="ContentWrapper">
+		<div class="StripeBackground"></div></div>
+		<div class="LeftArrowSpace"><div class="ArrowLeft"></div></div>	
+		<div class="RightArrowSpace"><div class="ArrowRight"></div></div>
+	
+	
 	<div class="MainSheet">
 		<!-- BEGINNE: Datum -->
 		<?php if($date == "true") : ?>
@@ -324,7 +328,8 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 
 		<div class="PolishedFront"></div>
-		<div class="MainContent">
+		
+<div class="MainContent">
 			<div class="StripeContent">
 				<div class="StripeMenu">
 					<jdoc:include type="modules" name="user3" />
@@ -406,15 +411,16 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 				<div class="Footer">
 					<?php if($scrolling == "true") : ?>
+										<!-- BEGINNE: Scrolling-Button -->
+					<a class="scrolling" href="#page" id="page"></a>
+					<!-- END: Scrolling-Button -->
+										<?php endif; ?>
 
 					<?php if ($this->countModules( 'footer' )) : ?>
 					<jdoc:include type="modules" name="footer" style="xhtml" />
 					<?php endif; ?>
 
-					<!-- BEGINNE: Scrolling-Button -->
-					<a class="scrolling" href="#page" id="page"></a>
-					<!-- END: Scrolling-Button -->
-					<?php endif; ?>
+
 
 
 					<?php if($timerrun == "true") : ?>
@@ -431,7 +437,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 						<?php endif; ?>
 
 
-
+					
 					<jdoc:include type="modules" name="copyright" />
 					<jdoc:include type="modules" name="syndicate" />
 				</div>
@@ -442,6 +448,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 				<? echo "uniquely crafted by <a href='http://www.blechdose-live.de/' target='_blank'>Alexander Christ </a> and
                                   beautifully designed by <a href='http://dl.dropbox.com/u/4854858/portfolio/index.html' target='_blank'>Yannick Lober</a>"; ?>
 			</div>
+
 			<!-- END: Copyright -->
 			<?php endif; ?>
 		</div>
