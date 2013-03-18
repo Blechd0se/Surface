@@ -1,0 +1,42 @@
+/* Style by Blechdose. */
+/*  fontsize  */
+#fontsize
+{
+	z-index:100;
+	position:absolute;
+	left:1em;
+	margin-top: 1em;
+	color: white;
+}
+
+#fontsize h3,#fontsize p
+{
+	border:0;
+	display:inline;
+	font-size:1em;
+}
+
+#fontsize p
+{
+	margin:0 0 0 2px;
+	color: white;ss
+}
+
+#fontsize a{
+ color: white;
+ font-size: 16px;
+}
+
+#fontsize p a
+{
+	font-weight:bold;
+	margin:0 0px;
+	display:inline;
+	padding:2px 0 2px 0;
+	color: white;
+}
+#fontsize h3
+{
+	color: white;
+	font-weight: bold;
+}
