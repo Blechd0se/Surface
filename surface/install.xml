@@ -64,8 +64,8 @@
 				<span class="klapp">Changelog:</span>
 				</h3><div id="klapp_menu" class="jpane-slider content" style="padding-top: 2px; border-top-style: none; border-top-width: initial; padding-left: 2px; border-top-color: initial; padding-bottom: 0px; border-bottom-style: none; border-bottom-width: initial; border-bottom-color: initial; overflow-x: hidden; overflow-y: hidden; ">
 <b>1.1 Beta:</b><br />
-- Yannick Lober joined the project
-- Massive rework of layout and code
+- Yannick Lober joined the project <br />
+- Massive rework of layout and code <br />
 				
 <b>1.0.1 Beta:</b><br />
 - Fixed Topmodule and some other minor improvements<br />

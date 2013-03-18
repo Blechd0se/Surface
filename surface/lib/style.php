@@ -39,11 +39,11 @@ defined('_JEXEC') or die('Restricted access');
 	
 
 .ArrowLeft, .ArrowRight{
-border-right:20px solid #<?php echo $module_color; ?>;
+border-right:20px solid #<?php echo $band_color; ?>;
 }
 
 .StripeBackground{
-background-color: #<?php echo $module_color; ?>;
+background-color: #<?php echo $band_color; ?>;
 }
 
 
@@ -56,7 +56,7 @@ border:1px solid #<?php echo $dropdown_color ?>;
 
 }
 .StripeContent{
-background-color: #<?php echo $module_color; ?>;
+background-color: #<?php echo $band_color; ?>;
 }
 
 .StripeMenu>ul.menu li:hover>a, .StripeMenu>ul.menu span.separator:hover{
@@ -65,7 +65,7 @@ background-color: #<? echo $dropdown_color; ?>;
 
 .StripeMenu>ul.menu ul a{
 background-color:  #<? echo $dropdown_color; ?>;
-border: 1px groove #<?php echo $module_color; ?>;
+border: 1px groove #<?php echo $band_color; ?>;
 }
 
 .StripeMenu>ul.menu li a:hover, .StripeMenu>ul.menu li.current a, .StripeMenu>ul.menu span.separator:hover{

@@ -37,6 +37,7 @@ $main_column                                     = $this->params->get("main_colu
 $main_size                                       = $this->params->get("main_size");
 $con_bg_color                                    = $this->params->get("con_bg_color");
 $module_color                                    = $this->params->get("module_color");
+$band_color                                		 = $this->params->get("band_color");
 $dropdown_color                                  = $this->params->get("dropdown_color");
 $starting_color                                  = $this->params->get("starting_color");
 $end_color                                       = $this->params->get("end_color");

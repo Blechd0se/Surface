@@ -150,6 +150,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>
 				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
 				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
+				<field name="band_color" type="text" default="#1E5799" label="PARAM_BAND_FARBE" description="DESC_PARAM_BAND_FARBE" class="color" size="20" />
 				<field name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />	
 				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
                         <option value="1">OPTION_DEFAULT</option>
