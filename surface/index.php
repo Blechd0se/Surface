@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
 	dir="<?php echo $this->direction; ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="version" content="1.0 Build: 03112012 // Blechdose" />
+<meta name="version" content="1.1 Build: 18032012 // Blechdose" />
 <?php  
 // Browserweiche aufrufen
 // Cookies auslesen
@@ -87,6 +87,10 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/slides.min.jquery.js"></script>
 <script
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/script.js"></script>
+		<?php if($link_animation == "true") : ?>
+<script
+	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.color.js"></script>		
+		<?php endif; ?>
 <?php if($fontsizeparam == "true") : ?>
 
 
