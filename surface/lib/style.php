@@ -79,6 +79,9 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	border: none;
 }
 	
+	.date {
+	font-family: <?php echo $font_content; ?>;
+	}
 	
 	#header ul li ul { background: #<?php echo $dropdown_color; ?>; }
 	<?php if($mainsheet_rounded == "true") : ?>
