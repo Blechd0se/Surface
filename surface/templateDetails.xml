@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
 <extension version="2.5" type="template" client="site" method="upgrade">
 	<name>Surface</name>
-	<creationDate>03.11.2012</creationDate>
+	<creationDate>18.03.2013</creationDate>
 	<author>Blechdose</author>
 	<copyright>Copyright by Blechdose</copyright>
 	<authorEmail>info@blechdose-live.de</authorEmail>
 	<authorUrl>http://www.blechdose-live.de</authorUrl>
-	<version>1.0</version>
+	<version>1.1</version>
 	<description>
 	<![CDATA[
 	<script type="text/javascript">
@@ -54,7 +54,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 <div style=" float: right">
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=24ZKQH6ND2HKN" target="_blank"> <img alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." border="0" height="47" src="http://www.blechdose-live.de/update/paypal/spenden.gif" width="126" /></a> </div>
 <h3 style="clear: both;">Version:</h3>
-<font size="+0"><b>1.0.1 Beta for Joomla! 2.5</b> </font>
+<font size="+0"><b>1.1 Beta for Joomla! 2.5</b> </font>
 <div style="margin: 0px 0px 0px 10px;">
 <ul>
 <li> <a href="http://www.blechdose-live.de/forum/34-how-tos/1359-how-to-template-einrichten#1359">[How-To] Set Up Your Template</a><br> </li>
@@ -212,7 +212,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 				<field name="javascript_slider_plugin_picture2_text" type="text" default="" label="PARAM_PLUGIN_SLIDER2_TEXT" description="DESC_PARAM_PLUGIN_SLIDER2_TEXT" size="40"></field>
 				<field name="javascript_slider_plugin_picture3" type="imagelist" default="slider3.jpg" label="PARAM_PLUGIN_SLIDER3" description="DESC_PARAM_PLUGIN_SLIDER3" directory="../templates/surface/images/slider/" />
 				<field name="javascript_slider_plugin_picture3_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER3_LINK" description="DESC_PARAM_PLUGIN_SLIDER3_LINK" size="40"></field>
-				<field name="javascript_slider_plugin_picture3_text" type="text" default="Lorum ipsorum Hanna Pastor" label="PARAM_PLUGIN_SLIDER3_TEXT" description="DESC_PARAM_PLUGIN_SLIDER3_TEXT" size="40"></field>
+				<field name="javascript_slider_plugin_picture3_text" type="text" default="Lorum ipsorum Text" label="PARAM_PLUGIN_SLIDER3_TEXT" description="DESC_PARAM_PLUGIN_SLIDER3_TEXT" size="40"></field>
 			 <field name="anzeige_dauer" type="text" default="5000" label="PARAM_PLUGIN_SLIDER_ANZEIGE" description="DESC_PARAM_PLUGIN_SLIDER_ANZEIGE" size="20"></field>
 			 </fieldset>
 			<!-- Update -->
