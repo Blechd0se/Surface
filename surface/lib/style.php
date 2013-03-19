@@ -49,9 +49,6 @@ border-left:20px solid #<?php echo $band_color; ?>;
 .StripeBackground{
 	background-color: #<?php echo $band_color; ?>;
 	margin: 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
-	-moz-box-shadow: 0px 20px 60px 0px #<?php echo $band_color; ?>;
-	-webkit-box-shadow: 0px 20px 60px 0px #<?php echo $band_color; ?>;
-	box-shadow: 0px 20px 60px 0px #<?php echo $band_color; ?>;
 }
 
 
@@ -157,7 +154,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
     <?php endif; ?>  
 	<?php if ($this->countModules( 'breadcrumb' )) : ?>
 	.Right {
-		margin-top: -60px;
+		margin-top: -70px;
 	}
 	<?php endif; ?>
 	<?php
@@ -185,7 +182,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	}
 		 <?php if ($position1_counter == "0" AND $position2_counter == "0" AND $position3_counter == "0") : ?>
 		 .Content, .Content_ext_right, .breadcrumps {
-			margin-left: 20px;
+			margin-left: 1%;
 		 }
 		<?php endif; ?>
 	<?php endif; ?>
