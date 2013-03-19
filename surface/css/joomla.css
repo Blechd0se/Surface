@@ -22,13 +22,14 @@
 .breadcrumps
 {
 	padding: 2px;
+	float: left;
 	font-family: arial, helvetica, sans-serif;
 	font-weight: bold;
 	text-align: left;
 	margin-left: 1%;
 	margin-top: 20px;
 	margin-bottom: 1em;
-	float: left;
+	border-bottom: 1px groove;
 	max-width: 60%;
 	min-width: 60%;
 	display: block;
@@ -722,3 +723,42 @@ div.MenueRight div.moduletable div.search {
 	float: right;
 	margin: auto;
 }
+
+/* ++++++++++++++  customised arrows  ++++++++++++++++++ */
+
+.smallarrow-right{
+display: inline-block;
+height: 0;
+width: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 5px solid black;
+}
+
+.smallarrow-left{
+display: inline-block;
+height: 0;
+width: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-right: 5px solid black;
+}
+
+.smallarrow-top{
+display: inline-block;
+height: 0;
+width: 0;
+border-bottom: 5px solid black;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+}
+
+.smallarrow-bottom{
+display: inline-block;
+height: 0;
+width: 0;
+border-top: 5px solid black;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+}
+

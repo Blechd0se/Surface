@@ -91,7 +91,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	#header ul li ul { background: #<?php echo $dropdown_color; ?>; }
 	<?php if($mainsheet_rounded == "true") : ?>
 	.MainContent, #topnav a.signin, #signin_menu, #header ul li ul, .inputbox, #fontsize,
-	.moduletable, .moduletableaccordion, .moduletablesearch, .MainHeading, .Content, .Content_ext_right, .breadcrumps
+	.moduletable, .moduletableaccordion, .moduletablesearch, .MainHeading, .Content, .Content_ext_right
 	{ 
 		border-radius: 2px; 
 		-moz-border-radius: 2px; 
@@ -224,10 +224,13 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	margin-left: -<?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 	margin-top: 23.1em;
 	}
-	
 	.ArrowLeft{
 	margin-left: <?php echo substr($main_size, 0, strlen($main_size)-2)-55;?>px;
 	}
+	
+	.smallarrow-right{
+	border-left: 5px solid #<?php echo $module_color; ?>;
+}
 	
 	
 </style>
