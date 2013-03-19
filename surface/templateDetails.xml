@@ -165,6 +165,10 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
                         <option value="0">OPTION_AUS</option>
 						<option value="2">OPTION_LEGACY</option>
                 </field>
+				<field name="mobil_support" type="list" default="1" label="PARAM_MOBIL" description="DESC_PARAM_MOBIL">
+                        <option value="1">OPTION_EIN</option>
+                        <option value="0">OPTION_AUS</option>
+                </field>
 				  <field name="kompression" type="radio" default="0" label="PARAM_COMP" description="DESC_PARAM_COMP">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>

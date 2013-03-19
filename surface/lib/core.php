@@ -25,6 +25,22 @@ defined('_JEXEC') or die;
 			return false;
 	}
 	
+	
+// Browserweiche für Android / iOS:
+// ToDo: Unterschied zwischen iOS und Android nötig?
+
+	function detect_mobil()
+	{
+		if (isset($_SERVER['HTTP_USER_AGENT']) && 
+			(strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false))
+				return true;
+		elseif (isset($_SERVER['HTTP_USER_AGENT']) && 
+			(strpos($_SERVER['HTTP_USER_AGENT'], 'Android') !== false))
+				return true;
+		else
+				return false;
+	}
+	
 // Mootools:
 
    function mootools( $headerstuff )
