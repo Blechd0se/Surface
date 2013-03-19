@@ -8,8 +8,6 @@ ToDo (Frontend)
 
 [*]Anpassung der Schriftarten
 
-[*]beidseitiger Pfeil
-
 [*]Collapsing Modules
 
 [*]Ersetzen der ^Top Grafik & des Dropdown-Pfeils
@@ -21,6 +19,9 @@ ToDo (Frontend)
 
 Changed (Frontend)
 ============
+
+[*]beidseitige Pfeile mit dynamischer Ausrichtung
+
 
 Requests
 ============
@@ -38,9 +39,12 @@ Requests
 Fixed
 ============
 
+[*] Überlappen von Slides + Title
+
+[*] Horizontaler Scrollbalken
+
 [*]modifiziertes Loginmodul
 
 [*]Accordionmenü (Hoververhalten)
 
 [*]Ausbrechen des Contents bei Schriftvergrößerung
-

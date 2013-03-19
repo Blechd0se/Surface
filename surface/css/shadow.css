@@ -5,7 +5,7 @@
 /* 10px Schatten: */
 .MenueRight, .MainHeading, #header ul li ul, div.Content #main img,
 .moduletable, .moduletableaccordion, .moduletablesearch, .moduletable h3, .moduletableaccordion h3,
-#article-index, #signin_menu, .breadcrumps
+#article-index, #signin_menu
 {
 	-moz-box-shadow: 0 0 3px #000;
 	-webkit-box-shadow: 0 0 3px #000;
@@ -63,11 +63,6 @@ box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
 	-moz-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
 	box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
-}
-.StripeBackground {
-	-moz-box-shadow: 0.1px 1px 2px 0.5px #646467;
-	-webkit-box-shadow: 0.1px 1px 2px 0.5px #646467;
-	box-shadow: 0.1px 1px 2px 0.5px #646467;
 }
 
 .StripeContent {

@@ -38,12 +38,17 @@ defined('_JEXEC') or die('Restricted access');
 	.moduletable h3, .moduletableaccordion h3 { background-color: #<?php echo $module_color; ?>; }
 	
 
-.ArrowLeft, .ArrowRight{
+.ArrowLeft{
 border-right:20px solid #<?php echo $band_color; ?>;
 }
 
+.ArrowRight{
+border-left:20px solid #<?php echo $band_color; ?>;
+}
+
 .StripeBackground{
-background-color: #<?php echo $band_color; ?>;
+	background-color: #<?php echo $band_color; ?>;
+	margin: 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 }
 
 
@@ -52,7 +57,7 @@ background-color: #<?php echo $module_color; ?>;
 }
 
 #signin_menu input{
-border:1px solid #<?php echo $dropdown_color ?>;
+border:1px solid #<?php echo $dropdown_color; ?>;
 
 }
 .StripeContent{
@@ -149,7 +154,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
     <?php endif; ?>  
 	<?php if ($this->countModules( 'breadcrumb' )) : ?>
 	.Right {
-		margin-top: -60px;
+		margin-top: -70px;
 	}
 	<?php endif; ?>
 	<?php
@@ -177,7 +182,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	}
 		 <?php if ($position1_counter == "0" AND $position2_counter == "0" AND $position3_counter == "0") : ?>
 		 .Content, .Content_ext_right, .breadcrumps {
-			margin-left: 20px;
+			margin-left: 1%;
 		 }
 		<?php endif; ?>
 	<?php endif; ?>
@@ -185,6 +190,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	{
 		left: <?php echo $main_size; ?>;
 		right: <?php echo $main_size; ?>;
+		min-width: 90em;
 	}
 	.Left
 	{
@@ -198,4 +204,30 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	{
 		width: <?php echo $right_column; ?>;
 	}
+	
+	.ContentWrapper	{
+	float: left;
+	width: 100%;
+	margin-top: 23.1em;
+	}
+	
+	.LeftArrowSpace{
+	float:left;
+	width: <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
+	margin-left: -100%;
+	margin-top: 23.1em;
+	}
+	
+	.RightArrowSpace{
+	float: left;
+	width: <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
+	margin-left: -<?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
+	margin-top: 23.1em;
+	}
+	
+	.ArrowLeft{
+	margin-left: <?php echo substr($main_size, 0, strlen($main_size)-2)-55;?>px;
+	}
+	
+	
 </style>
