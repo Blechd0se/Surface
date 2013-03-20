@@ -72,6 +72,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 </description>
 	<files>
 		<filename>index.php</filename>
+		<filename>mobil.php</filename>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
 		<filename>offline.php</filename>

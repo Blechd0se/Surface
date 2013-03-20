@@ -21,7 +21,7 @@ $mainsheet_rounded                               = ($this->params->get("mainshee
 $link_animation                                  = ($this->params->get("link_animation", 1)  == 0)?"false":"true";
 $bild_animation                                  = ($this->params->get("bild_animation", 1)  == 0)?"false":"true";
 $javascript_slider                               = ($this->params->get("javascript_slider", 1)  == 0)?"false":"true";
-$mobil_support                                   = ($this->params->get("mobil_support", 1)  == 0)?"false":"true";
+$mobil_support                                   = $this->params->get("mobil_support");
 $size                                            = $this->params->get("size");
 $javascript_slider_plugin_picture1               = $this->params->get("javascript_slider_plugin_picture1");
 $javascript_slider_plugin_picture2               = $this->params->get("javascript_slider_plugin_picture2");

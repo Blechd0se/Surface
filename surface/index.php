@@ -28,9 +28,9 @@ if (detect_ie() && $ie_support == "1" && $variable != true) {
 		require_once dirname(__FILE__) . DS . '/lib/ie/ie.php';
 }
 // ToDo: Mobil Cookie setzen
-elseif (detect_mobil() && $mobil_support == "true") {
+elseif (detect_mobil() && $mobil_support) {
 			// Code für Umleitung:
-			echo "Mobil Content kommt hier hin";
+			require_once dirname(__FILE__) . DS . 'mobil.php';
 			}
 else {
 
