@@ -65,12 +65,6 @@ img
 .moduletablesearch {
 	background-color: #1E1E1E; /* FIX für MenueRight */
 }
-
-.moduletable ul li h4, moduletableaccordion ul li h4{
-	margin-right: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
 .moduletable h3, .moduletableaccordion h3
 {
 	color: #FFF;
@@ -90,8 +84,6 @@ img
 {
 	border-bottom: 1px solid #CCC;
 	margin-right: 10px;
-	margin-bottom: 5px;
-	margin-top: 5px;
 }
 
 .moduletable ul li ul li:last-child, .moduletableaccordion ul li ul li:last-child {
@@ -767,18 +759,17 @@ border-right: 5px solid black;
 display: inline-block;
 height: 0;
 width: 0;
-border-right: 7px solid transparent;
-border-left: 7px solid transparent;
-border-bottom: 7px solid white;
-
+border-bottom: 5px solid black;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
 }
 
 .smallarrow-bottom{
 display: inline-block;
 height: 0;
 width: 0;
+border-top: 5px solid black;
 border-right: 5px solid transparent;
 border-left: 5px solid transparent;
-margin-left: 7px;
 }
 

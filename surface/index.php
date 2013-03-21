@@ -105,8 +105,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 <!-- BEGINNE: Scroll-Effekt -->
 <link rel="stylesheet" type="text/css"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/scrolling.css" />
-<script type="text/javascript">
-window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });</script>
+<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });</script>
 <!-- END: Scroll-Effekt -->
 <?php endif; ?>
 <?php if($javascript_slider == "true") : ?>
@@ -360,6 +359,7 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 				<!-- END: FONTSIZE -->
 				<?php endif; ?>
 				<jdoc:include type="modules" name="loginload" style="_login" />
+
 			</div>
 			<div class="Space"></div>
 			<div class="Left">
@@ -410,7 +410,19 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 
 
 				<div class="Footer">
-					
+					<?php if($scrolling == "true") : ?>
+										<!-- BEGINNE: Scrolling-Button -->
+					<a class="scrolling" href="#page" id="page"></a>
+					<!-- END: Scrolling-Button -->
+										<?php endif; ?>
+
+					<?php if ($this->countModules( 'footer' )) : ?>
+					<jdoc:include type="modules" name="footer" style="xhtml" />
+					<?php endif; ?>
+
+
+
+
 					<?php if($timerrun == "true") : ?>
 					<!-- BEGINNE: Timer -->
 					<div class="timer">
@@ -440,21 +452,6 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 			<!-- END: Copyright -->
 			<?php endif; ?>
 		</div>
-		<?php if($scrolling == "true") : ?>
-					<!-- BEGINNE: Scrolling-Button -->
-					<div class="scrolling" id="page">
-					<a href="#page" id="page">
-					<div class="smallarrow-top"></div>
-					<br>TOP</a>
-					</div>
-					<!-- END: Scrolling-Button -->
-					<?php endif; ?>
-
-					<?php if ($this->countModules( 'footer' )) : ?>
-					<jdoc:include type="modules" name="footer" style="xhtml" />
-					<?php endif; ?>
-
-
 	</div>
 
 	<jdoc:include type="modules" name="debug" />

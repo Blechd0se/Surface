@@ -33,7 +33,7 @@ if ($varivariable_login != null) : ?>
     
     <?php else : ?>
     <div class="login_module">
-    <div id="topnav" class="topnav"><a href="#" class="signin"><span><?php echo $module->title; ?><div class="smallarrow-bottom"></div></span></a></div>
+    <div id="topnav" class="topnav"><a href="#" class="signin"><span><?php echo $module->title; ?></span></a></div>
     <form action="<?php echo JRoute::_('index.php', true, $params->get('usesecure')); ?>" method="post" id="signin" >
         <?php echo $params->get('pretext'); ?>
         <fieldset class="input" id="signin_menu">

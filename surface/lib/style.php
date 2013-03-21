@@ -256,10 +256,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	
 	.smallarrow-right{
 	border-left: 5px solid #<?php echo $module_color; ?>;
-	}
+}
 	
-	.smallarrow-bottom{
-	border-top: 5px solid #<?php echo $dropdown_color; ?>;
-	}
 	
 </style>
