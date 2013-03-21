@@ -145,22 +145,22 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     $(".moduletable li a").hover(function() {
                 $(this).stop().animate({ color: "#7db9e8" }, 600);
         },function() {
-                 $(this).stop().animate({ color: "#1e5799" }, 400);
+                 $(this).stop().animate({ color: "#5A5A5A" }, 400);
         });
 	$(".moduletable ul li span").hover(function() {
                 $(this).stop().animate({ color: "#7db9e8" }, 600);
         },function() {
-                 $(this).stop().animate({ color: "#1e5799" }, 400);
+                 $(this).stop().animate({ color: "#5A5A5A" }, 400);
         });
 	$(".moduletableaccordion li a").hover(function() {
                 $(this).stop().animate({ color: "#7db9e8" }, 600);
         },function() {
-                 $(this).stop().animate({ color: "#1e5799" }, 400);
+                 $(this).stop().animate({ color: "#5A5A5A" }, 400);
         });
 	$(".moduletableaccordion ul li span").hover(function() {
                 $(this).stop().animate({ color: "#7db9e8" }, 600);
         },function() {
-                 $(this).stop().animate({ color: "#1e5799" }, 400);
+                 $(this).stop().animate({ color: "#5A5A5A" }, 400);
         });
 	});
     </script>
