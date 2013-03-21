@@ -30,7 +30,7 @@ if (detect_ie() && $ie_support == "1" && $variable != true) {
 // ToDo: Mobil Cookie setzen
 elseif (detect_mobil() && $mobil_support) {
 			// Code für Umleitung:
-			require_once dirname(__FILE__) . DS . 'mobil.php';
+require_once dirname(__FILE__) . DS . 'mobil.php';
 			}
 else {
 
@@ -229,12 +229,12 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 	
 	<!-- BEGINNE: Hintergrundfahne -->
 
-	<!-- END: Hintergrundfahne --> 
 		<div class="ContentWrapper">
 		<div class="StripeBackground"></div></div>
 		<div class="LeftArrowSpace"><div class="ArrowLeft"></div></div>	
 		<div class="RightArrowSpace"><div class="ArrowRight"></div></div>
-	
+		<!-- END: Hintergrundfahne --> 
+
 	
 	<div class="MainSheet">
 		<!-- BEGINNE: Datum -->
@@ -354,14 +354,9 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 					document.write('<a href="#" title="<?php echo JText::_('DECREASE_SIZE'); ?>" onclick="changeFontSize(-2); return false;" class="smaller">A-</a><span class="unseen">&nbsp;</span>');
 					 document.write('<a href="#" title="<?php echo JText::_('RESET_DEFAULT'); ?>" onclick="revertStyles(); return false;" class="reset">A </a></p>');
 						document.write('<a href="#" title="<?php echo JText::_('INCREASE_SIZE'); ?>" onclick="changeFontSize(2); return false;" class="larger">A+</a><span class="unseen">&nbsp;</span>');
-
 					//]]>
 				</script>
-
-
 				</div>
-
-
 				<!-- END: FONTSIZE -->
 				<?php endif; ?>
 				<jdoc:include type="modules" name="loginload" style="_login" />
@@ -447,10 +442,10 @@ window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });
 		</div>
 		<?php if($scrolling == "true") : ?>
 					<!-- BEGINNE: Scrolling-Button -->
-					<div class="scrolling">
+					<div class="scrolling" id="page">
 					<a href="#page" id="page">
 					<div class="smallarrow-top"></div>
-					<br>back to top</a>
+					<br>TOP</a>
 					</div>
 					<!-- END: Scrolling-Button -->
 					<?php endif; ?>

@@ -14,6 +14,31 @@ defined('_JEXEC') or die('Restricted access');
 <style type="text/css">
 	body { 
 	font-family: <?php echo $font_content; ?>;
+	
+	<?php if($javascript_slider == "false") : ?>
+	
+	.PolishedFront{
+	margin-top: 14em;
+	}
+	
+	.ContentWrapper{
+	margin-top: 16em;
+	}
+	
+	.LeftArrowSpace{
+	margin-top: 16em;
+	}
+	
+	.RightArrowSpace{
+	margin-top: 16em;
+	}
+	
+	.Title{
+	margin-top: 3em;
+	}
+	
+	<?php endif; ?>
+
 	<?php if ($image == 1) :
 			$image = "background.png"; ?>
 			background: #<?php echo $con_bg_color; ?>;
@@ -33,7 +58,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php if ($image == 3) : ?>
 			background: #<?php echo $con_bg_color; ?>;
 			<?php endif; ?>
-		   font-size: <?php echo $size; ?>;
+			font-size: 12px;
 		   }
 	.moduletable h3, .moduletableaccordion h3 { background-color: #<?php echo $module_color; ?>; }
 	
@@ -50,7 +75,6 @@ border-left:20px solid #<?php echo $band_color; ?>;
 	background-color: #<?php echo $band_color; ?>;
 	margin: 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 }
-
 
 input.signin_submit{
 background-color: #<?php echo $module_color; ?>;
@@ -199,6 +223,8 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	.Content
 	{
 		width: <?php echo $main_column; ?>;
+		font-size: <?php echo $size; ?>;
+		line-height: 145%;
 	}
 	.Right
 	{
