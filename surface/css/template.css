@@ -258,8 +258,8 @@ body {
 	margin-bottom: 2.5em;
 }
 
-.copyBrand a:link, a:visited{
-	color: #ededed;
+.copyBrand a:link, .copyBrand a:visited, .copyBrand p{
+	color: white;
 }
 
 .copyBrand a:hover {

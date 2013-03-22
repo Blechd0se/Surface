@@ -17,6 +17,7 @@
 a.signin {
 	position:relative;
 	margin-left:3px;
+	width: auto;
 }
 a.signin span {
 	background-position:100% 50%;

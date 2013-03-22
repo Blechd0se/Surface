@@ -449,8 +449,8 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 			<?php if($copyright == "true") : ?>
 			<!-- BEGINNE: Copyright -->
 			<div class="copyBrand">
-				<? echo "uniquely crafted by <a href='http://www.blechdose-live.de/' target='_blank'>Alexander Christ </a> and
-                                  beautifully designed by <a href='http://dl.dropbox.com/u/4854858/portfolio/index.html' target='_blank'>Yannick Lober</a>"; ?>
+				<p>uniquely crafted by <a href='http://www.blechdose-live.de/' target='_blank'>Alexander Christ </a> and
+                                  beautifully designed by <a href='http://dl.dropbox.com/u/4854858/portfolio/index.html' target='_blank'>Yannick Lober</a></p>
 			</div>
 
 			<!-- END: Copyright -->
