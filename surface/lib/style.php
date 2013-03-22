@@ -15,30 +15,6 @@ defined('_JEXEC') or die('Restricted access');
 	body { 
 	font-family: <?php echo $font_content; ?>;
 	
-	<?php if($javascript_slider == "false") : ?>
-	
-	.PolishedFront{
-	margin-top: 14em;
-	}
-	
-	.ContentWrapper{
-	margin-top: 16em;
-	}
-	
-	.LeftArrowSpace{
-	margin-top: 16em;
-	}
-	
-	.RightArrowSpace{
-	margin-top: 16em;
-	}
-	
-	.Title{
-	margin-top: 3em;
-	}
-	
-	<?php endif; ?>
-
 	<?php if ($image == 1) :
 			$image = "background.png"; ?>
 			background: #<?php echo $con_bg_color; ?>;
@@ -257,6 +233,29 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	.smallarrow-right{
 	border-left: 5px solid #<?php echo $module_color; ?>;
 }
+
+<?php if($javascript_slider == "false") : ?>
 	
+	.PolishedFront{
+	margin-top: 14em;
+	}
+	
+	.ContentWrapper{
+	margin-top: 16em;
+	}
+	
+	.LeftArrowSpace{
+	margin-top: 16em;
+	}
+	
+	.RightArrowSpace{
+	margin-top: 16em;
+	}
+	
+	.Title{
+	margin-top: 3em;
+	}
+	
+	<?php endif; ?>	
 	
 </style>
