@@ -172,9 +172,8 @@ body {
 	width: auto;
 	min-width: 10em;
 	display: block;
-	margin-left: 1px;
 	height: 17px;
-	padding: 12px 0px;
+	padding: 11.5px 0px;
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
@@ -254,9 +253,13 @@ body {
 
 .copyBrand {
 	font-size: 12px;
-	color: grey;
+	color: white;
 	margin-top: -0.8em;
 	margin-bottom: 2.5em;
+}
+
+.copyBrand a:link, a:visited{
+	color: #ededed;
 }
 
 .copyBrand a:hover {

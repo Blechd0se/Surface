@@ -410,11 +410,15 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 
 				<div class="Footer">
-					<?php if($scrolling == "true") : ?>
-										<!-- BEGINNE: Scrolling-Button -->
-					<a class="scrolling" href="#page" id="page"></a>
-					<!-- END: Scrolling-Button -->
-										<?php endif; ?>
+  				<?php if($scrolling == "true") : ?>
+          	<!-- BEGINNE: Scrolling-Button -->
+          	<div class="scrolling">
+          	<a href="#page" id="page">
+          	<div class="smallarrow-top"></div>
+          	<br>TOP</a>
+          	</div>
+          	<!-- END: Scrolling-Button -->
+          	<?php endif; ?>
 
 					<?php if ($this->countModules( 'footer' )) : ?>
 					<jdoc:include type="modules" name="footer" style="xhtml" />
