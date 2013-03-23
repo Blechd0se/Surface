@@ -89,7 +89,7 @@ background-color: #<? echo $dropdown_color; ?>;
 	}
 	
 	#header ul li ul { background: #<?php echo $dropdown_color; ?>; }
-	<?php if($mainsheet_rounded == "true") : ?>
+	<?php if($mainsheet_rounded) : ?>
 	.MainContent, #topnav a.signin, #signin_menu, #header ul li ul, .inputbox, #fontsize,
 	.moduletable, .moduletableaccordion, .moduletablesearch, .MainHeading, .Content, .Content_ext_right
 	{ 
@@ -130,7 +130,7 @@ background-color: #<? echo $dropdown_color; ?>;
 	}
 
     <?php endif; ?>
-	<?php if($beta_warnung == "true") : ?>
+	<?php if($beta_warnung) : ?>
 	.beta {
 		position: fixed;
 		background-image: url(<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/beta.png);
@@ -148,7 +148,7 @@ background-color: #<? echo $dropdown_color; ?>;
 		box-shadow: 0 0 0px #000;
 	}
     <?php endif; ?>
-	<?php if ($this->countModules( 'newsflashload' ) or $javascript_slider == "true") : ?>
+	<?php if ($this->countModules( 'newsflashload' ) or $javascript_slider) : ?>
 	/* Tue nichts */
 
     <?php endif; ?>  
@@ -213,7 +213,7 @@ background-color: #<? echo $dropdown_color; ?>;
 	margin-top: 23.1em;
 	}
 
-	<?php if($javascript_slider == "false") : ?>
+	<?php if(!$javascript_slider) : ?>
 	
 	.PolishedFront{
 	margin-top: 14em;

@@ -8,19 +8,19 @@
 defined('_JEXEC') or die;
 
 //Parameter
-$date                                            = ($this->params->get("date", 1)  == 0)?"false":"true";
-$javascript                                      = ($this->params->get("javascript", 1)  == 0)?"false":"true";
-$mootools                                        = ($this->params->get("mootools", 1)  == 0)?"false":"true";
-$timerrun                                        = ($this->params->get("timerrun", 1)  == 0)?"false":"true";
-$beta_warnung                                    = ($this->params->get("beta_warnung", 1)  == 0)?"false":"true";
-$kompression                                     = ($this->params->get("kompression", 1)  == 0)?"false":"true";
-$fontsizeparam                                   = ($this->params->get("fontsizeparam", 1)  == 0)?"false":"true";
-$scrolling                                       = ($this->params->get("scrolling", 1)  == 0)?"false":"true";
-$page_title_default                              = ($this->params->get("page_title_default", 1)  == 0)?"false":"true";
-$mainsheet_rounded                               = ($this->params->get("mainsheet_rounded", 1)  == 0)?"false":"true";
-$link_animation                                  = ($this->params->get("link_animation", 1)  == 0)?"false":"true";
-$bild_animation                                  = ($this->params->get("bild_animation", 1)  == 0)?"false":"true";
-$javascript_slider                               = ($this->params->get("javascript_slider", 1)  == 0)?"false":"true";
+$date                                            = $this->params->get("date");
+$javascript                                      = $this->params->get("javascript");
+$mootools                                        = $this->params->get("mootools");
+$timerrun                                        = $this->params->get("timerrun");
+$beta_warnung                                    = $this->params->get("beta_warnung");
+$kompression                                     = $this->params->get("kompression");
+$fontsizeparam                                   = $this->params->get("fontsizeparam");
+$scrolling                                       = $this->params->get("scrolling");
+$page_title_default                              = $this->params->get("page_title_default");
+$mainsheet_rounded                               = $this->params->get("mainsheet_rounded");
+$link_animation                                  = $this->params->get("link_animation");
+$bild_animation                                  = $this->params->get("bild_animation");
+$javascript_slider                               = $this->params->get("javascript_slider");
 $mobil_support                                   = $this->params->get("mobil_support");
 $size                                            = $this->params->get("size");
 $javascript_slider_plugin_picture1               = $this->params->get("javascript_slider_plugin_picture1");

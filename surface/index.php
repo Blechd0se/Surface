@@ -25,21 +25,22 @@ defined('_JEXEC') or die;
 // Browserweiche aufrufen
 // Cookies auslesen
 $variable = $_COOKIE["IE"];
-if (detect_ie() && $ie_support == "1" && $variable != true) {
-		require_once dirname(__FILE__) . DS . '/lib/ie/ie.php';
-}
-// ToDo: Mobil Cookie setzen
-elseif (detect_mobil() && $mobil_support) {
-			// Code für Umleitung:
-require_once dirname(__FILE__) . DS . 'mobil.php';
+	if (detect_mobil()) {
+		if ($mobil_support) {
+				require_once dirname(__FILE__) . DS . 'mobil.php';
 			}
-else {
+		else { continue; }
+	}
+	elseif (detect_ie() && $ie_support == "1" && $variable != true) {
+				require_once dirname(__FILE__) . DS . '/lib/ie/ie.php';
+	}
+	else {
 
 ?>
 <jdoc:include type="head" />
 <?php 
 // Mootools-Weiche
-if($mootools == "true") :
+if($mootools) :
 $headerstuff = $this->getHeadData();
 mootools( $headerstuff );
 $this->setHeadData($headerstuff);
@@ -56,7 +57,7 @@ $this->setHeadData($headerstuff);
 <link rel="stylesheet"
 	href="<?php echo $this->baseurl ?>/templates/system/css/system.css"
 	type="text/css" />
-<?php if($kompression == "true") : ?>
+<?php if($kompression) : ?>
 <link rel="stylesheet" type="text/css"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/css_compress.php" />
 <?php else : ?>
@@ -64,7 +65,7 @@ $this->setHeadData($headerstuff);
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/general.css"
 	type="text/css" />
 
-<?php if($fontsizeparam == "true") : ?>
+<?php if($fontsizeparam) : ?>
 <!-- BEGINNE: FONTSIZE -->
 <link rel="stylesheet"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/fontsize.css"
@@ -85,7 +86,7 @@ $this->setHeadData($headerstuff);
 <?php 
 require_once dirname(__FILE__) . DS . '/lib/style.php';
 ?>
-<?php if($javascript == "true") : ?>
+<?php if($javascript) : ?>
 <script
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/mootools-more.js"></script>
 <script
@@ -96,19 +97,19 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/slides.min.jquery.js"></script>
 <script
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/script.js"></script>
-		<?php if($link_animation == "true") : ?>
+		<?php if($link_animation) : ?>
 <script
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.color.js"></script>		
 		<?php endif; ?>
 
-<?php if($scrolling == "true") : ?>
+<?php if($scrolling) : ?>
 <!-- BEGINNE: Scroll-Effekt -->
 <link rel="stylesheet" type="text/css"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/scrolling.css" />
 <script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });</script>
 <!-- END: Scroll-Effekt -->
 <?php endif; ?>
-<?php if($javascript_slider == "true") : ?>
+<?php if($javascript_slider) : ?>
 <!-- BEGINNE: Slider -->
 <script type="text/javascript">
 		$(function(){
@@ -138,7 +139,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	</script>
 <!-- END: Slider -->
 <?php endif; ?>
-<?php if($link_animation == "true") : ?>
+<?php if($link_animation) : ?>
 <!-- BEGINNE: Hover-Effekt -->
 <script type="text/javascript">
    $(document).ready(function(){
@@ -217,7 +218,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 </head>
 <body class="contentpane" id="page">
-	<?php if($beta_warnung == "true") : ?>
+	<?php if($beta_warnung) : ?>
 	<div class="beta"></div>
 	<?php endif; ?>
 
@@ -239,7 +240,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	
 	<div class="MainSheet">
 		<!-- BEGINNE: Datum -->
-		<?php if($date == "true") : ?>
+		<?php if($date) : ?>
 		<div class="date">
 			<?php $now = &JFactory::getDate(); echo $now->toFormat("%A, %d %b %Y"); ?>
 		</div>
@@ -248,7 +249,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 		<div class="Title">
 			<?php if ($this->countModules( 'headermodule' )) : ?>
 			<jdoc:include type="modules" name="headermodule" />
-			<?php elseif($page_title_default == "true") : ?>
+			<?php elseif($page_title_default) : ?>
 			<h1>
 				<a href="index.php"> <?php	 $app    = &JFactory::getApplication();
 				echo $app->getCfg('sitename');
@@ -263,7 +264,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 			</h1>
 		</div>
 
-		<?php if ($this->countModules( 'newsflashload' ) or $javascript_slider == "true") : ?>
+		<?php if ($this->countModules( 'newsflashload' ) or $javascript_slider) : ?>
 		<div class="RightPicture">
 
 			<!-- BEGINNE: Slider -->
@@ -315,7 +316,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 								<?php endif; ?>
 							</div>
 						</div>
-						<?php if($javascript_slider == "true") : ?>
+						<?php if($javascript_slider) : ?>
 						<a href="#" class="prev"><img
 							src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/left_prev.png"
 							width="48" height="48" alt="Arrow Prev"> </a> <a href="#"
@@ -429,7 +430,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 
 
-					<?php if($timerrun == "true") : ?>
+					<?php if($timerrun) : ?>
 					<!-- BEGINNE: Timer -->
 					<div class="timer">
 						<p>
@@ -461,7 +462,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 		</div>
 
 	<jdoc:include type="modules" name="debug" />
-	<?php if($bild_animation == "true") : ?>
+	<?php if($bild_animation) : ?>
 	<script
 		src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.lazyload.js"></script>
 	<script type="text/javascript" charset="utf-8">
