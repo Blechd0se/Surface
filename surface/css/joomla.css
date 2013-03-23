@@ -584,7 +584,7 @@ ul.pagenav li a
 {
 	border:solid 1px #ccc;
 	display:inline;
-	padding:2px;
+	padding:4px;
 	text-decoration:none;
 }
 ul.pagenav li.pagenav-prev

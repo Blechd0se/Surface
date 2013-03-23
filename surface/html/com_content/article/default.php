@@ -82,7 +82,26 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 ?>
 <?php echo $this->item->text; ?>
 
-<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">+</div></div></div><div id="tagLeft"></div></div><div class="tagContent" style="display:none">'?>
+
+
+
+<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">+</div></div></div><div id="tagLeft">'; ?>
+<?php if ($params->get('show_author') && !empty($this->item->author )) : ?>
+	<dd class="createdby">
+	<?php $author = $this->item->created_by_alias ? $this->item->created_by_alias : $this->item->author; ?>
+	<?php if (!empty($this->item->contactid) && $params->get('link_author') == true): ?>
+	<?php
+		$needle = 'index.php?option=com_contact&view=contact&id=' . $this->item->contactid;
+		$item = JSite::getMenu()->getItems('link', $needle, true);
+		$cntlink = !empty($item) ? $needle . '&Itemid=' . $item->id : $needle;
+	?>
+		<?php echo JText::sprintf('COM_CONTENT_WRITTEN_BY', JHtml::_('link', JRoute::_($cntlink), $author)); ?>
+	<?php else: ?>
+		<?php echo JText::sprintf('COM_CONTENT_WRITTEN_BY', $author); ?>
+	<?php endif; ?>
+	</dd>
+<?php endif; ?>
+<?php echo '</div></div><div class="tagContent" style="display:none">';?>
 <?php echo "<script type='text/javascript'>$(function() {
     	$('#tagCircleIn').click(function() {
         var elem = $('.tagContent');

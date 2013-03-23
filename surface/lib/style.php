@@ -233,7 +233,10 @@ background-color: #<? echo $dropdown_color; ?>;
 	background-color: #<?php echo $dropdown_color; ?>;
 	}
 	
-	
+	#tagLeft{
+	color: #<?php echo $dropdown_color; ?>;
+	}
+
 	/* Customised native CSS arrows */
 	
 	.LeftArrowSpace{

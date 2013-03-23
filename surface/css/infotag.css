@@ -5,15 +5,17 @@ width: 100%;
 
 .tag{
 padding-top: 0.5em;
-padding-right: 2em;
+padding-right: 1em;
 padding-bottom: 3em;
+margin-left: -2.3em;
 color: #555;
 }
 
 .tagContent{
--moz-box-shadow: inset -1px 2px 13px 0 #9e9c9c;
--webkit-box-shadow: inset -1px 2px 13px 0 #9e9c9c;
-box-shadow: inset -1px 2px 13px 0 #9e9c9c;
+-moz-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
+-webkit-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
+box-shadow: inset -1px 2px 7px 0 #9e9c9c;
+min-height: 1.3em;
 padding-top: 0.5em;
 padding-bottom: 0.2em;
 padding-right: 1em;
@@ -28,14 +30,14 @@ width: 100%;
 }
 
 #tagRight{
-margin-left: 80px;
+margin-left: 400px;
 text-align: right;
 line-height: 20px;
 }
 
 #tagLeft{
 float: left;
-width: 80px;
+width: 400px;
 margin-left: -100%;
 }
 
