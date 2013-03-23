@@ -44,6 +44,57 @@ if (!empty($this->item->pagination) AND $this->item->pagination && !$this->item-
 	</h2>
 <?php endif; ?>
 
+<?php  if (!$params->get('show_intro')) :
+	echo $this->item->event->afterDisplayTitle;
+endif; ?>
+
+<?php echo $this->item->event->beforeDisplayContent; ?>
+
+<?php $useDefList = (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_parent_category'))
+	or ($params->get('show_create_date')) or ($params->get('show_modify_date')) or ($params->get('show_publish_date'))
+	or ($params->get('show_hits'))); ?>
+
+<?php if (isset ($this->item->toc)) : ?>
+	<?php echo $this->item->toc; ?>
+<?php endif; ?>
+
+<?php if (isset($urls) AND ((!empty($urls->urls_position) AND ($urls->urls_position=='0')) OR  ($params->get('urls_position')=='0' AND empty($urls->urls_position) ))
+		OR (empty($urls->urls_position) AND (!$params->get('urls_position')))): ?>
+<?php echo $this->loadTemplate('links'); ?>
+<?php endif; ?>
+
+<?php if ($params->get('access-view')):?>
+<?php  if (isset($images->image_fulltext) and !empty($images->image_fulltext)) : ?>
+<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
+<div class="img-fulltext-<?php echo htmlspecialchars($imgfloat); ?>">
+<img
+	<?php if ($images->image_fulltext_caption):
+		echo 'class="caption"'.' title="' .htmlspecialchars($images->image_fulltext_caption) .'"';
+	endif; ?>
+	src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
+</div>
+<?php endif; ?>
+
+<?php
+if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item->paginationposition AND !$this->item->paginationrelative):
+	echo $this->item->pagination;
+ endif;
+?>
+<?php echo $this->item->text; ?>
+
+<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">+</div></div></div><div id="tagLeft"></div></div><div class="tagContent" style="display:none">'?>
+<?php echo "<script type='text/javascript'>$(function() {
+    	$('#tagCircleIn').click(function() {
+        var elem = $('.tagContent');
+        if (elem.css('display') == 'none') {
+            elem.slideDown(500);
+        }
+        else {
+            elem.slideUp(500);
+        }
+    });
+	});</script>"
+ ?>
 <?php if ($canEdit ||  $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
 	<ul class="actions">
 	<?php if (!$this->print) : ?>
@@ -73,17 +124,6 @@ if (!empty($this->item->pagination) AND $this->item->pagination && !$this->item-
 
 	</ul>
 <?php endif; ?>
-
-<?php  if (!$params->get('show_intro')) :
-	echo $this->item->event->afterDisplayTitle;
-endif; ?>
-
-<?php echo $this->item->event->beforeDisplayContent; ?>
-
-<?php $useDefList = (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_parent_category'))
-	or ($params->get('show_create_date')) or ($params->get('show_modify_date')) or ($params->get('show_publish_date'))
-	or ($params->get('show_hits'))); ?>
-
 <?php if ($useDefList) : ?>
 	<dl class="article-info">
 	<dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
@@ -148,34 +188,7 @@ endif; ?>
 <?php if ($useDefList) : ?>
 	</dl>
 <?php endif; ?>
-
-<?php if (isset ($this->item->toc)) : ?>
-	<?php echo $this->item->toc; ?>
-<?php endif; ?>
-
-<?php if (isset($urls) AND ((!empty($urls->urls_position) AND ($urls->urls_position=='0')) OR  ($params->get('urls_position')=='0' AND empty($urls->urls_position) ))
-		OR (empty($urls->urls_position) AND (!$params->get('urls_position')))): ?>
-<?php echo $this->loadTemplate('links'); ?>
-<?php endif; ?>
-
-<?php if ($params->get('access-view')):?>
-<?php  if (isset($images->image_fulltext) and !empty($images->image_fulltext)) : ?>
-<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
-<div class="img-fulltext-<?php echo htmlspecialchars($imgfloat); ?>">
-<img
-	<?php if ($images->image_fulltext_caption):
-		echo 'class="caption"'.' title="' .htmlspecialchars($images->image_fulltext_caption) .'"';
-	endif; ?>
-	src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
-</div>
-<?php endif; ?>
-
-<?php
-if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item->paginationposition AND !$this->item->paginationrelative):
-	echo $this->item->pagination;
- endif;
-?>
-<?php echo $this->item->text; ?>
+<? echo '</div>';?>
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item->paginationposition AND!$this->item->paginationrelative):
 	 echo $this->item->pagination;?>
@@ -211,6 +224,8 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item-
 		</p>
 	<?php endif; ?>
 <?php endif; ?>
+
+
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item->paginationposition AND $this->item->paginationrelative):
 	 echo $this->item->pagination;?>

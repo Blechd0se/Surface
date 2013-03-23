@@ -51,6 +51,9 @@ $this->setHeadData($headerstuff);
 	href="<?php echo $this->baseurl ?>/templates/system/css/general.css"
 	type="text/css" />
 <link rel="stylesheet"
+	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/infotag.css"
+	type="text/css" />
+<link rel="stylesheet"
 	href="<?php echo $this->baseurl ?>/templates/system/css/system.css"
 	type="text/css" />
 <?php if($kompression == "true") : ?>

@@ -584,7 +584,6 @@ ul.pagenav li a
 {
 	border:solid 1px #ccc;
 	display:inline;
-	background:#eee;
 	padding:2px;
 	text-decoration:none;
 }
@@ -640,10 +639,10 @@ right: 10px;}
 
 #main ul.actions
 {
-        text-align:right;
-        padding:0 ;
-        width:100%;
-        margin:0
+	float: right;
+	text-align: right;
+	padding: 0;
+	margin: 0;
 }
 
 #main ul.actions li

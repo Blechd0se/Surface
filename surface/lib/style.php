@@ -229,9 +229,14 @@ background-color: #<? echo $dropdown_color; ?>;
 	
 	<?php endif; ?>	
 	
+	#tagCircleIn, #tagCircleOut{
+	background-color: #<?php echo $dropdown_color; ?>;
+	}
+	
+	
 	/* Customised native CSS arrows */
 	
-		.LeftArrowSpace{
+	.LeftArrowSpace{
 	float:left;
 	width: <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 	margin-left: -100%;

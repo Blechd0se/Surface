@@ -5,7 +5,8 @@
 /* 10px Schatten: */
 .MenueRight, .MainHeading, #header ul li ul, div.Content #main img,
 .moduletable, .moduletableaccordion, .moduletablesearch, .moduletable h3, .moduletableaccordion h3,
-#article-index, #signin_menu
+#article-index, #signin_menu, ul.pagenav li a
+
 {
 	-moz-box-shadow: 0 0 3px #000;
 	-webkit-box-shadow: 0 0 3px #000;
@@ -31,13 +32,6 @@ div.Content #main ul li a img {
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px #888;
 	box-shadow: 0 0 5px #888;
-}
-
-ul.pagenav li a
-{
-	-moz-box-shadow: 0 0 5px #000;
-	-webkit-box-shadow: 0 0 5px #000;
-	box-shadow: 0 0 5px #000;
 }
 
 
