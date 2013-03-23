@@ -3,7 +3,7 @@
 /**
  * @package		Surface.site
  * @subpackage	Templates.Surface
- * @copyright	Copyright (C) 2009 - 2012 Blechdose. All rights reserved.
+ * @copyright	Copyright (C) 2009 - 2013 Blechdose. All rights reserved.
  */
  
 require_once dirname(__FILE__) . DS . '/lib/config.php';
@@ -20,7 +20,7 @@ defined('_JEXEC') or die;
 	dir="<?php echo $this->direction; ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="version" content="1.1 Build: 18032012 // Blechdose" />
+<meta name="version" content="1.1 Build: 23032012 // Blechdose" />
 <?php  
 // Browserweiche aufrufen
 // Cookies auslesen
@@ -225,8 +225,6 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	<div class="MenueRight">
 
 		<div id="searching"></div>
-
-	</div>
 
 	</div>
 	
@@ -461,7 +459,6 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 			<!-- END: Copyright -->
 			<?php endif; ?>
 		</div>
-	</div>
 
 	<jdoc:include type="modules" name="debug" />
 	<?php if($bild_animation == "true") : ?>
