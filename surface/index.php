@@ -348,7 +348,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 				</div>
 
 
-				<?php if($fontsizeparam == "true") : ?>
+				<?php if($fontsizeparam) : ?>
 				<!-- BEGINNE: FONTSIZE -->
 				<script
 					src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/md_stylechanger.js"></script>
