@@ -19,5 +19,5 @@ if ($item->menu_image) {
 else { $linktype = $item->title;
 }
 
-?><span class="separator"><?php echo $title; ?><?php echo $linktype; ?></span>
+?><span class="separator"><?php echo $title; ?><?php echo $linktype;  ?><div class="Accordion-arrow-left"></div></span>
 

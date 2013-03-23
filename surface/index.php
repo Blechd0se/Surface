@@ -193,13 +193,17 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 		
 		jQuery("#accordion span.separator").click(function(current) {
 			/* Abfrage für korrekten Pfeil: */
-			if ( $("span.separator").attr("id") == "0" ) {	
-				jQuery(this).css({background:"url('<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/tipsy-west.gif') center right no-repeat"}).next("ul.accordion").slideToggle(300).siblings("ul.accordion").slideDown("slow");
+			if ( $("span.separator").attr("id") == "0" ) {
+				jQuery(this).css({}).next("ul.accordion").slideToggle(300).siblings("ul.accordion").slideDown("slow");
 					$("span.separator").attr("id", "1");
+				jQuery('.Accordion-arrow-bottom').replaceWith("<div class='Accordion-arrow-left'></div>");
+
 			}
 			else {
-				jQuery(this).css({background:"url('<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/tipsy-south.gif') center right no-repeat"}).next("ul.accordion").slideToggle(300).siblings("ul.accordion").slideDown("slow");
+				jQuery(this).css({}).next("ul.accordion").slideToggle(300).siblings("ul.accordion").slideDown("slow");
 					$("span.separator").attr("id", "0");
+				jQuery('.Accordion-arrow-left').replaceWith("<div class='Accordion-arrow-bottom'></div>");
+
 			}
 				 });
     });

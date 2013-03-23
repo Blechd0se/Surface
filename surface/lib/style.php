@@ -212,8 +212,26 @@ background-color: #<? echo $dropdown_color; ?>;
 	width: 100%;
 	margin-top: 23.1em;
 	}
+
+	<?php if($javascript_slider == "false") : ?>
 	
-	.LeftArrowSpace{
+	.PolishedFront{
+	margin-top: 14em;
+	}
+	
+	.ContentWrapper, .LeftArrowSpace, .RightArrowSpace{
+	margin-top: 16em;
+	}
+
+	.Title{
+	margin-top: 3em;
+	}
+	
+	<?php endif; ?>	
+	
+	/* Customised native CSS arrows */
+	
+		.LeftArrowSpace{
 	float:left;
 	width: <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 	margin-left: -100%;
@@ -238,21 +256,12 @@ background-color: #<? echo $dropdown_color; ?>;
 	.smallarrow-bottom{
 	border-top: 5px solid #<?php echo $dropdown_color; ?>;
 	}
-
-	<?php if($javascript_slider == "false") : ?>
 	
-	.PolishedFront{
-	margin-top: 14em;
+	.Accordion-arrow-left{
+	border-right: 5px solid #<?php echo $dropdown_color; ?>;
 	}
 	
-	.ContentWrapper, .LeftArrowSpace, .RightArrowSpace{
-	margin-top: 16em;
+	.Accordion-arrow-bottom{
+	border-top: 5px solid #<?php echo $dropdown_color; ?>;
 	}
-
-	.Title{
-	margin-top: 3em;
-	}
-	
-	<?php endif; ?>	
-	
 </style>

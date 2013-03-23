@@ -170,7 +170,6 @@ input.signin_submit
 span.separator
 {
 	padding-right: 10%;
-	background: url('../images/tipsy-west.gif') center right no-repeat;
 }
 
 /* h1 on frontpage and blog view */
@@ -768,6 +767,29 @@ width: 0;
 border-top: 5px solid transparent;
 border-bottom: 5px solid transparent;
 border-right: 5px solid black;
+}
+
+.StripeMenu>ul.menu span.separator>.Accordion-arrow-left, 
+.StripeMenu>ul.menu span.separator>.Accordion-arrow-bottom{
+display: none;
+}
+
+.Accordion-arrow-left{
+display: inline-block;
+height: 0;
+width: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+margin-left: 20px;
+}
+
+.Accordion-arrow-bottom{
+display: inline-block;
+height: 0;
+width: 0;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+margin-left: 20px;
 }
 
 .smallarrow-top{
