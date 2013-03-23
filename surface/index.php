@@ -5,10 +5,12 @@
  * @subpackage	Templates.Surface
  * @copyright	Copyright (C) 2009 - 2013 Blechdose. All rights reserved.
  */
- 
+
 require_once dirname(__FILE__) . DS . '/lib/config.php';
 require_once dirname(__FILE__) . DS . '/lib/core.php';
 require_once dirname(__FILE__) . DS . '/lib/timer.php';
+// Disable it for the moment:
+//gzip_compression();
 
 header('Vary: Accept-Encoding');
 defined('_JEXEC') or die;

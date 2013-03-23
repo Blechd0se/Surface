@@ -79,3 +79,12 @@ defined('_JEXEC') or die;
 	}
 
 	
+	function gzip_compression() 
+	{
+	if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) 
+		return ob_start("ob_gzhandler"); 
+	else 
+		return ob_start();
+	
+	}
+	
