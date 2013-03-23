@@ -78,7 +78,7 @@ background-color: #<? echo $dropdown_color; ?>;
 }
 
 
-a:hover,a:active,span.separator:active,span.separator:hover{
+	a:hover,a:active, span.separator:active,span.separator:hover{
 	color:#<?php echo $module_color; ?>;
 	text-decoration:underline;
 	border: none;
@@ -99,7 +99,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 		-ms-border-radius: 2px; 
 		-webkit-border-radius: 2px; 
 	}
-	#signin_submit, #signin_menu input[type=text], #signin_menu input[type=password], input.signin_submit {
+	#signin_submit, #signin_menu input[type=text], #signin_menu input[type=password], input.signin_submit, .button {
 		border-radius: 4px;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px; 
@@ -154,7 +154,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
     <?php endif; ?>  
 	<?php if ($this->countModules( 'breadcrumb' )) : ?>
 	.Right {
-		margin-top: -70px;
+		margin-top: -55px;
 	}
 	<?php endif; ?>
 	<?php
@@ -226,6 +226,7 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	margin-left: -<?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
 	margin-top: 23.1em;
 	}
+	
 	.ArrowLeft{
 	margin-left: <?php echo substr($main_size, 0, strlen($main_size)-2)-55;?>px;
 	}
@@ -238,24 +239,16 @@ a:hover,a:active,span.separator:active,span.separator:hover{
 	border-top: 5px solid #<?php echo $dropdown_color; ?>;
 	}
 
-<?php if($javascript_slider == "false") : ?>
+	<?php if($javascript_slider == "false") : ?>
 	
 	.PolishedFront{
 	margin-top: 14em;
 	}
 	
-	.ContentWrapper{
+	.ContentWrapper, .LeftArrowSpace, .RightArrowSpace{
 	margin-top: 16em;
 	}
-	
-	.LeftArrowSpace{
-	margin-top: 16em;
-	}
-	
-	.RightArrowSpace{
-	margin-top: 16em;
-	}
-	
+
 	.Title{
 	margin-top: 3em;
 	}

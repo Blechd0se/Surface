@@ -18,7 +18,7 @@ div.Content #main ul li a img {
 	box-shadow: 0 0 0px #000;
 }
 /* 5px Schatten: */
-.MainContent, .RightPicture, #topnav a.signin 
+.MainContent, .RightPicture, #topnav a.signin, .LayerOne, .LayerTwo 
 {
 	-moz-box-shadow: 0 0 5px #4d4d4d;
 	-webkit-box-shadow: 0 0 5px #4d4d4d;

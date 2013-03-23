@@ -34,16 +34,23 @@
 	min-width: 60%;
 	display: block;
 	color: #666;
-	padding: 10px 10px 10px 10px;
 	background-color: #FFF;
 	font-size: 11px;
 }
-h2 a, h2 {
+h2 a, h2{
 	font-size: 24px;
 	font-weight: normal !important;
 	line-height: 30px;
 	margin-top: -3px;
 }
+
+.Content h1 a, .Content h1{
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+	margin-top: -3px;
+}
+
 p {
 	color: #555;
 }
@@ -769,7 +776,7 @@ height: 0;
 width: 0;
 border-right: 7px solid transparent;
 border-left: 7px solid transparent;
-border-bottom: 7px solid white;
+border-bottom: 7px solid #bbbbbb;
 
 }
 

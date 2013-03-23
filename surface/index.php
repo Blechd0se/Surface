@@ -5,6 +5,7 @@
  * @subpackage	Templates.Surface
  * @copyright	Copyright (C) 2009 - 2012 Blechdose. All rights reserved.
  */
+ 
 require_once dirname(__FILE__) . DS . '/lib/config.php';
 require_once dirname(__FILE__) . DS . '/lib/core.php';
 require_once dirname(__FILE__) . DS . '/lib/timer.php';
@@ -96,11 +97,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 <script
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.color.js"></script>		
 		<?php endif; ?>
-<?php if($fontsizeparam == "true") : ?>
 
-
-
-<?php endif; ?>
 <?php if($scrolling == "true") : ?>
 <!-- BEGINNE: Scroll-Effekt -->
 <link rel="stylesheet" type="text/css"
@@ -415,7 +412,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
           	<div class="scrolling">
           	<a href="#page" id="page">
           	<div class="smallarrow-top"></div>
-          	<br>TOP</a>
+          	<br><div class="button">TOP</div></a>
           	</div>
           	<!-- END: Scrolling-Button -->
           	<?php endif; ?>
@@ -452,7 +449,8 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 				<p>uniquely crafted by <a href='http://www.blechdose-live.de/' target='_blank'>Alexander Christ </a> and
                                   beautifully designed by <a href='http://dl.dropbox.com/u/4854858/portfolio/index.html' target='_blank'>Yannick Lober</a></p>
 			</div>
-
+			
+			<div class="LayerOne"></div><div class="LayerTwo"></div><br>
 			<!-- END: Copyright -->
 			<?php endif; ?>
 		</div>
