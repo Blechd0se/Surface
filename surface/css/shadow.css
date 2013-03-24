@@ -4,8 +4,7 @@
 
 /* 10px Schatten: */
 .MenueRight, .MainHeading, #header ul li ul, div.Content #main img,
-.moduletable, .moduletableaccordion, .moduletablesearch, .moduletable h3, .moduletableaccordion h3,
-#article-index, #signin_menu
+.moduletablesearch, #article-index, #signin_menu
 
 {
 	-moz-box-shadow: 0 0 3px #000;

@@ -36,7 +36,6 @@ defined('_JEXEC') or die('Restricted access');
 			<?php endif; ?>
 			font-size: 12px;
 		   }
-	.moduletable h3, .moduletableaccordion h3 { background-color: #<?php echo $module_color; ?>; }
 	
 
 .ArrowLeft{
@@ -235,6 +234,15 @@ background-color: #<? echo $dropdown_color; ?>;
 	
 	#tagLeft{
 	color: #<?php echo $dropdown_color; ?>;
+	}
+
+	.Right>.moduletable h3:after, .Right>.moduletableaccordion h3:after{
+	background-color: #<?php echo $dropdown_color; ?>;
+	}
+	
+	.Left>.moduletable h3:before, .Left>.moduletableaccordion h3:before{
+	width: 3px;
+	background-color: #<?php echo $dropdown_color; ?>;
 	}
 
 	/* Customised native CSS arrows */
