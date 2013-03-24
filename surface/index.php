@@ -417,7 +417,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 
 				<div class="Footer">
-  				<?php if($scrolling == "true") : ?>
+  				<?php if($scrolling) : ?>
           	<!-- BEGINNE: Scrolling-Button -->
           	<div class="scrolling">
           	<a href="#page" id="page">
@@ -453,7 +453,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 					<jdoc:include type="modules" name="syndicate" />
 				</div>
 			</div>
-			<?php if($copyright == "true") : ?>
+			<?php if($copyright) : ?>
 			<!-- BEGINNE: Copyright -->
 			<div class="copyBrand">
 				<p>uniquely crafted by <a href='http://www.blechdose-live.de/' target='_blank'>Alexander Christ </a> and
