@@ -277,6 +277,22 @@ body {
 	margin-bottom: 2.5em;
 }
 
+.social-icon {
+position:inline-block;
+margin-left: 1em;
+margin-bottom: 1em;
+float: left;
+width: 25px;
+height: 25px;
+background-color: #3bb3e0;
+position: relative;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+}
+
+
 .copyBrand a:link, .copyBrand a:visited, .copyBrand p{
 	color: white;
 }

@@ -84,8 +84,9 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 
 
 
-
-<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">i</div><div id="tagCircleIn">+</div><div id="tagCircleIn">l</div></div></div><div id="tagLeft">'; ?>
+<?php 
+// Info Rollout
+echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">i</div><div id="tagCircleSh">+</div><div id="tagCircleLi">↔</div></div></div><div id="tagLeft">'; ?>
 <?php if ($params->get('show_author') && !empty($this->item->author )) : ?>
 	<dd class="createdby">
 	<?php $author = $this->item->created_by_alias ? $this->item->created_by_alias : $this->item->author; ?>
@@ -101,48 +102,8 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 	<?php endif; ?>
 	</dd>
 <?php endif; ?>
-<?php echo '</div></div><div class="tagContent" style="display:none">';?>
-<?php echo "<script type='text/javascript'>$(function() {
-    	$('#tagCircleIn').click(function() {
-        var elem = $('.tagContent');
-        if (elem.css('display') == 'none') {
-            elem.slideDown(500);
-        }
-        else {
-            elem.slideUp(500);
-        }
-    });
-	});</script>"
- ?>
-<?php if ($canEdit ||  $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
-	<ul class="actions">
-	<?php if (!$this->print) : ?>
-		<?php if ($params->get('show_print_icon')) : ?>
-			<li class="print-icon">
-			<?php echo JHtml::_('icon.print_popup',  $this->item, $params); ?>
-			</li>
-		<?php endif; ?>
+<?php echo '</div></div><div class="tagInfo" style="display:none">';?>
 
-		<?php if ($params->get('show_email_icon')) : ?>
-			<li class="email-icon">
-			<?php echo JHtml::_('icon.email',  $this->item, $params); ?>
-			</li>
-		<?php endif; ?>
-
-		<?php if ($canEdit) : ?>
-			<li class="edit-icon">
-			<?php echo JHtml::_('icon.edit', $this->item, $params); ?>
-			</li>
-		<?php endif; ?>
-
-	<?php else : ?>
-		<li>
-		<?php echo JHtml::_('icon.print_screen',  $this->item, $params); ?>
-		</li>
-	<?php endif; ?>
-
-	</ul>
-<?php endif; ?>
 <?php if ($useDefList) : ?>
 	<dl class="article-info">
 	<dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
@@ -208,6 +169,100 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 	</dl>
 <?php endif; ?>
 <? echo '</div>';?>
+
+
+<?php
+
+// GetSiteName
+function getSiteName() {
+ $pageURL = 'http';
+ if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ $pageURL .= "://";
+ if ($_SERVER["SERVER_PORT"] != "80") {
+  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+ } else {
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+ }
+ return $pageURL;
+}
+
+
+// CopyToClipboard
+
+
+// Share
+echo '<div class="tagShare" style="display:none">';
+
+//twitter
+echo '<div class="social-icon">' ?>
+<a href="#" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/twitter.png" width="25" height="25" alt="twitter"> </a>
+<?php echo '</div>';
+
+//facebook
+echo '<div class="social-icon">' ?>
+<a href="#" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/facebook.png" width="25" height="25" alt="twitter"> </a>
+<?php echo '</div>';
+
+//mail
+echo '<div class="social-icon">' ?>
+<a href="#" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/mail.png" width="25" height="25" alt="twitter"> </a>
+<?php echo '</div>';
+
+//google+
+echo '<div class="social-icon">' ?>
+<a href="#" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/google.png" width="25" height="25" alt="twitter"> </a>
+<?php echo '</div>';
+
+//print
+echo '<div class="social-icon">' ?>
+<a href="#" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/print.png" width="25" height="25" alt="twitter"> </a>
+<?php echo '</div>';
+echo '</div>';
+
+// Link
+echo '<div class="tagLink" style="display:none">'; ?>
+Link:  
+<a href="<?php echo getSiteName();?>"><?php echo getSiteName(); ?></a> 
+<?php echo '</div>';?>
+
+
+<?php echo "<script type='text/javascript'>$(function() {
+    	    
+    	    
+    	    $('#tagCircleIn').click(function() {
+            var elem = $('.tagInfo');
+       		 if (elem.css('display') == 'none') {
+             elem.fadeIn(500);
+        		}
+       			  else {
+            	  elem.fadeOut(500);
+        		}
+    		});
+    		
+    		$('#tagCircleLi').click(function() {
+            var elem = $('.tagLink');
+       		if (elem.css('display') == 'none') {
+            elem.fadeIn(500);
+        		}
+       			  else {
+            	  elem.fadeOut(500);
+        		}
+    		});
+    		
+    	 
+    		 $('#tagCircleSh').click(function() {
+             var elem = $('.tagShare');
+       		 if (elem.css('display') == 'none') {
+             elem.fadeIn(500);
+        		}
+       			  else {
+            	  elem.fadeOut(500);
+        		}
+    		});
+			});</script>";
+
+?>
+
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item->paginationposition AND!$this->item->paginationrelative):
 	 echo $this->item->pagination;?>

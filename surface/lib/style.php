@@ -228,7 +228,7 @@ background-color: #<? echo $dropdown_color; ?>;
 	
 	<?php endif; ?>	
 	
-	#tagCircleIn, #tagCircleOut{
+	#tagCircleIn, #tagCircleSh, #tagCircleLi{
 	background-color: #<?php echo $dropdown_color; ?>;
 	}
 	
@@ -280,4 +280,19 @@ background-color: #<? echo $dropdown_color; ?>;
 	.Accordion-arrow-bottom{
 	border-top: 5px solid #<?php echo $dropdown_color; ?>;
 	}
+	
+	/* Customised Share icons */ 
+	
+	.social-icon {
+	background-image: linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -o-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -moz-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -ms-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #<?php echo $dropdown_color; ?>), color-stop(1, #<?php echo $module_color; ?>) );
+	-webkit-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+}
 </style>
