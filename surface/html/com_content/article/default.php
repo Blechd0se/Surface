@@ -85,7 +85,7 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 
 
 
-<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">+</div></div></div><div id="tagLeft">'; ?>
+<?php echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCircleIn">i</div><div id="tagCircleIn">+</div><div id="tagCircleIn">l</div></div></div><div id="tagLeft">'; ?>
 <?php if ($params->get('show_author') && !empty($this->item->author )) : ?>
 	<dd class="createdby">
 	<?php $author = $this->item->created_by_alias ? $this->item->created_by_alias : $this->item->author; ?>

@@ -37,12 +37,14 @@ line-height: 20px;
 
 #tagLeft{
 float: left;
+padding-top: 5px;
 width: 400px;
 margin-left: -100%;
 }
 
 #tagCircleIn, #tagCircleOut{
   display: inline-block;
+  margin-left: 0.5em;
   width: 25px;
   height: 25px;
   border-radius: 25px;
