@@ -116,7 +116,12 @@ background-color: #585858;
 color: #585858;
 content: '.';
 float: right;
-display: inline-blocK;
+display: inline-block;
+border-radius: 1px 0 0 1px;
+-moz-border-radius: 1px 0 0 1px;
+-o-border-radius: 1px 0 0 1px;
+-ms-border-radius: 1px 0 0 1px;
+-webkit-border-radius: 1px 0 0 1px;
 }
 
 .Right>.moduletable h3:before, .Right>.moduletableaccordion h3:before{

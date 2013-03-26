@@ -238,11 +238,13 @@ background-color: #<? echo $dropdown_color; ?>;
 
 	.Right>.moduletable h3:after, .Right>.moduletableaccordion h3:after{
 	background-color: #<?php echo $dropdown_color; ?>;
+	color: #<?php echo $dropdown_color; ?>;
 	}
 	
 	.Left>.moduletable h3:before, .Left>.moduletableaccordion h3:before{
 	width: 3px;
 	background-color: #<?php echo $dropdown_color; ?>;
+	color: #<?php echo $dropdown_color; ?>;
 	}
 
 	/* Customised native CSS arrows */
