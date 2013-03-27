@@ -64,7 +64,24 @@ img
 	margin-top: 10px;
 	background-color: #FFF;
 	padding: 0px 0px 2px 0px;
+	margin-bottom: -2.1em;
 }
+
+.Left>.moduletableaccordion>#accordion, .Left>.moduletable>.menu, .Left>.moduletable>.categories-module{
+	border-right: 1px solid #f2f2f3;
+	margin-right 1px;
+}
+
+.Right>.moduletableaccordion>#accordion, .Right>.moduletable>.menu, .Right>.moduletable>.categories-module{
+	border-left: 1px solid #f2f2f3;
+	margin-left: 1px;
+}
+
+.StripeMenu>#accordion, .StripeMenu>.menu{
+	border-right: 0px;
+	margin-right: 0px;
+}
+
 .moduletable p, .moduletableaccordion p, .moduletablesearch p, .moduletable span, .moduletableaccordion span 
 {
 	padding: 2px;
@@ -77,6 +94,10 @@ img
 	margin-right: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.moduletable ul li:first-child, .moduletableaccordion ul li:first-child{
+padding-top: 1em;
 }
 
 .Left>.moduletable h3:before, .Left>.moduletableaccordion h3:before{
@@ -145,6 +166,7 @@ border-radius: 0 1px 1px 0;
 background-color: #f2f2f3;
 color: #585858;
 line-height: 30px;
+margin-bottom: -1em;
 
 }
 
@@ -157,7 +179,6 @@ line-height: 30px;
 .moduletable ul li, .moduletableaccordion ul li
 {
 border-bottom: 1px dotted #CCC;
-margin-right: 10px;
 margin-bottom: 5px;
 margin-top: 5px;
 padding-top: 3px;
@@ -167,10 +188,9 @@ padding-bottom: 3px;
 .moduletable ul li:last-child, .moduletableaccordion ul li:last-child
 {
 border-bottom: 0px;
-margin-right: 10px;
 margin-bottom: 5px;
 margin-top: 5px;
-padding-bottom: 3px;
+padding-bottom: 1em;
 }
 
 .moduletable ul li ul li:last-child, .moduletableaccordion ul li ul li:last-child {
