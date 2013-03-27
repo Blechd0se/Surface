@@ -371,6 +371,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 			<div class="Space"></div>
 			<div class="Left">
 				<jdoc:include type="modules" name="left" style="xhtml" />
+				<div class="moduleplaceholderLeft"></div>
 			</div>
 			<?php if ($this->countModules( 'position-1' ) or $this->countModules( 'position-2' ) or $this->countModules( 'position-3' )) : ?>
 			<div class="module_content">
@@ -412,6 +413,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 				<?php if ($this->countModules( 'right' )) : ?>
 				<div class="Right">
 					<jdoc:include type="modules" name="right" style="xhtml" />
+					<div class="moduleplaceholderRight"></div>
 				</div>
 				<?php endif; ?>
 

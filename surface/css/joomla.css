@@ -64,18 +64,8 @@ img
 	margin-top: 10px;
 	background-color: #FFF;
 	padding: 0px 0px 2px 0px;
-	margin-bottom: -2.1em;
 }
 
-.Left>.moduletableaccordion>#accordion, .Left>.moduletable>.menu, .Left>.moduletable>.categories-module{
-	border-right: 1px solid #f2f2f3;
-	margin-right 1px;
-}
-
-.Right>.moduletableaccordion>#accordion, .Right>.moduletable>.menu, .Right>.moduletable>.categories-module{
-	border-left: 1px solid #f2f2f3;
-	margin-left: 1px;
-}
 
 .StripeMenu>#accordion, .StripeMenu>.menu{
 	border-right: 0px;
@@ -98,6 +88,17 @@ img
 
 .moduletable ul li:first-child, .moduletableaccordion ul li:first-child{
 padding-top: 1em;
+}
+
+
+.Left>.moduletableaccordion>#accordion, .Left>.moduletable>.menu, .Left>.moduletable>.categories-module{
+	border-right: 1px solid #f2f2f3;
+	margin-right 1px;
+}
+
+.Right>.moduletableaccordion>#accordion, .Right>.moduletable>.menu, .Right>.moduletable>.categories-module{
+	border-left: 1px solid #f2f2f3;
+	margin-left: 1px;
 }
 
 .Left>.moduletable h3:before, .Left>.moduletableaccordion h3:before{
@@ -193,6 +194,7 @@ margin-top: 5px;
 padding-bottom: 1em;
 }
 
+
 .moduletable ul li ul li:last-child, .moduletableaccordion ul li ul li:last-child {
 	border-bottom: 0px solid;
 	margin-right: 10px;
@@ -232,6 +234,19 @@ a:link,a:visited, .separator {
 	cursor: pointer;
 }
 
+.moduleplaceholderRight{
+position: absolute;
+height: auto;
+margin-left: 1px;
+border-left: 1px solid #f2f2f3;
+}
+
+.moduleplaceholderLeft{
+position: absolute;
+height: auto;
+margin-right: 1px;
+border-left: 1px solid #f2f2f3;
+}
 
 .login_module {
 	height: 30px;
@@ -446,10 +461,44 @@ ul#archive-items li.row1
 
 .items-leading
 {
-        padding:0px 5px 10px 5px;
+		padding: 15px 10px 15px 15px;
         overflow:hidden;
-        margin-bottom:10px
+        background-color: white;
+        z-index: 3;
 }
+
+.backFeatureOne{
+	-moz-box-shadow: 0 0 1px #4d4d4d;
+	-webkit-box-shadow: 0 0 1px #4d4d4d;
+	box-shadow: 0 0 1px #4d4d4d;
+	border-radius: 1px;
+	background-color: white;
+}
+
+.backFeatureTwo{
+	-moz-box-shadow: 0 0 1px #4d4d4d;
+	-webkit-box-shadow: 0 0 1px #4d4d4d;
+	box-shadow: 0 0 1px #4d4d4d;
+	background-color: white;
+	margin-top: 1px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 2px;
+	width: 99.5%;
+	}
+	
+	.backFeatureThree{
+	-moz-box-shadow: 0 0 1px #4d4d4d;
+	-webkit-box-shadow: 0 0 1px #4d4d4d;
+	box-shadow: 0 0 1px #4d4d4d;
+	background-color: white;
+	margin-top: 1px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2em;
+	height: 1px;
+	width: 99%;
+	}
 
 .row-separator
 {

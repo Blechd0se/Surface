@@ -21,10 +21,11 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 	</h1>
 <?php endif; ?>
-
+<div class="backFeatureOne">
+<div class="items-leading">
 <?php $leadingcount=0 ; ?>
 <?php if (!empty($this->lead_items)) : ?>
-<div class="items-leading">
+
 	<?php foreach ($this->lead_items as &$item) : ?>
 		<div class="leading-<?php echo $leadingcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
 			<?php
@@ -36,7 +37,8 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 			$leadingcount++;
 		?>
 	<?php endforeach; ?>
-</div>
+</div></div><div class="backFeatureTwo"></div><div class="backFeatureThree"></div>
+
 <?php endif; ?>
 <?php
 	$introcount=(count($this->intro_items));
