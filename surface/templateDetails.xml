@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
 <extension version="2.5" type="template" client="site" method="upgrade">
 	<name>Surface</name>
-	<creationDate>18.03.2013</creationDate>
+	<creationDate>26.03.2013</creationDate>
 	<author>Blechdose</author>
 	<copyright>Copyright by Blechdose</copyright>
 	<authorEmail>info@blechdose-live.de</authorEmail>
@@ -17,6 +17,9 @@
 							jQuery('#jform_params_javascript_slider_plugin_picture1-lbl,#jform_params_javascript_slider_plugin_picture1,#jform_params_javascript_slider_plugin_picture1_link-lbl,#jform_params_javascript_slider_plugin_picture1_link,#jform_params_javascript_slider_plugin_picture2-lbl,#jform_params_javascript_slider_plugin_picture2,#jform_params_javascript_slider_plugin_picture2_link,#jform_params_javascript_slider_plugin_picture2_link-lbl,#jform_params_javascript_slider_plugin_picture3-lbl,#jform_params_javascript_slider_plugin_picture3,#jform_params_javascript_slider_plugin_picture3_link,#jform_params_javascript_slider_plugin_picture3_link-lbl,#jform_params_anzeige_dauer,#jform_params_anzeige_dauer-lbl,#jform_params_javascript_slider_plugin_picture1_text,#jform_params_javascript_slider_plugin_picture1_text-lbl,#jform_params_javascript_slider_plugin_picture2_text,#jform_params_javascript_slider_plugin_picture2_text-lbl,#jform_params_javascript_slider_plugin_picture3_text,#jform_params_javascript_slider_plugin_picture3_text-lbl').fadeIn();							
 						}	else {										jQuery('#jform_params_javascript_slider_plugin_picture1-lbl,#jform_params_javascript_slider_plugin_picture1,#jform_params_javascript_slider_plugin_picture1_link-lbl,#jform_params_javascript_slider_plugin_picture1_link,#jform_params_javascript_slider_plugin_picture2-lbl,#jform_params_javascript_slider_plugin_picture2,#jform_params_javascript_slider_plugin_picture2_link,#jform_params_javascript_slider_plugin_picture2_link-lbl,#jform_params_javascript_slider_plugin_picture3-lbl,#jform_params_javascript_slider_plugin_picture3,#jform_params_javascript_slider_plugin_picture3_link,#jform_params_javascript_slider_plugin_picture3_link-lbl,#jform_params_anzeige_dauer,#jform_params_anzeige_dauer-lbl,#jform_params_javascript_slider_plugin_picture1_text,#jform_params_javascript_slider_plugin_picture1_text-lbl,#jform_params_javascript_slider_plugin_picture2_text,#jform_params_javascript_slider_plugin_picture2_text-lbl,#jform_params_javascript_slider_plugin_picture3_text,#jform_params_javascript_slider_plugin_picture3_text-lbl').fadeOut();
 						}
+						
+						// Keep those switches simple:
+						/* CSS3 Umschalter: */
 						if(jQuery('#jform_params_image').val() == 2) {
 						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeIn();
 						}
@@ -24,6 +27,38 @@
 						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
 						
 						}
+						/* Farb-Menü: */
+						if(jQuery('#jform_params_color_preset').val() == 1) {
+						jQuery('#jform_params_con_bg_color-lbl,#jform_params_con_bg_color,#jform_params_module_color-lbl,#jform_params_module_color,#jform_params_band_color-lbl,#jform_params_band_color,#jform_params_dropdown_color-lbl,#jform_params_dropdown_color,#jforms_params_image-lbl,#jforms_params_image,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeIn();
+						}
+						else {
+						jQuery('#jform_params_con_bg_color-lbl,#jform_params_con_bg_color,#jform_params_module_color-lbl,#jform_params_module_color,#jform_params_band_color-lbl,#jform_params_band_color,#jform_params_dropdown_color-lbl,#jform_params_dropdown_color,#jforms_params_image-lbl,#jforms_params_image,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
+						
+							/* Grün kommt hier hin: */
+							if(jQuery('#jform_params_color_preset').val() == 2) {
+								jQuery('#jform_params_con_bg_color').attr('value', '000000');
+								jQuery('#jform_params_module_color').attr('value', '000000');
+								jQuery('#jform_params_band_color').attr('value', '000000');
+								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								// FIXME: Update erfolgt erst bei Klick
+							}
+							/* Blau (Standard) kommt hier hin: */
+							if(jQuery('#jform_params_color_preset').val() == 3) {
+								jQuery('#jform_params_con_bg_color').attr('value', '000000');
+								jQuery('#jform_params_module_color').attr('value', '000000');
+								jQuery('#jform_params_band_color').attr('value', '000000');
+								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								// FIXME: Update erfolgt erst bei Klick
+							}
+							/* Rot kommt hier hin: */
+							if(jQuery('#jform_params_color_preset').val() == 4) {
+								jQuery('#jform_params_con_bg_color').attr('value', '000000');
+								jQuery('#jform_params_module_color').attr('value', '000000');
+								jQuery('#jform_params_band_color').attr('value', '000000');
+								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								// FIXME: Update erfolgt erst bei Klick
+							}
+						}		
 		}
 		jQuery(document).ready(function($) {
 		
@@ -31,7 +66,7 @@
 		
 					checkFormStatus();
 			
-		jQuery('#jform_params_javascript_slider,#jform_params_image').change(function(){				 
+		jQuery('#jform_params_javascript_slider,#jform_params_image, #jform_params_color_preset').change(function(){				 
 						checkFormStatus();	
 				 
 				 	});	
@@ -148,18 +183,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 				<field name="left_column" type="text" default="17%" label="PARAM_LEFT_COLUMN" description="DESC_PARAM_LEFT_COLUMN" size="20"></field>
 				<field name="right_column" type="text" default="17%" label="PARAM_RIGHT_COLUMN" description="DESC_PARAM_RIGHT_COLUMN" size="20"></field>
 				<field name="main_column" type="text" default="60%" label="PARAM_MAIN_COLUMN" description="DESC_PARAM_MAIN_COLUMN" size="20"></field>
-				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>
-				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
-				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
-				<field name="band_color" type="text" default="#1E5799" label="PARAM_BAND_FARBE" description="DESC_PARAM_BAND_FARBE" class="color" size="20" />
-				<field name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />	
-				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
-                        <option value="1">OPTION_DEFAULT</option>
-                       	<option value="2">OPTION_CSS3</option>
-                         <option value="3">OPTION_AUS</option>
-						 </field>
-				<field name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
-				<field name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
+				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>	
               	<field hr="true" type="spacer" />
                  <field name="ie_support" type="list" default="1" label="PARAM_IE" description="DESC_PARAM_IE">
                         <option value="1">OPTION_EIN</option>
@@ -176,6 +200,27 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
                 </field>
 
     			</fieldset>
+				<!-- Farb-Menü -->
+				<fieldset name="farbmenu" description="" label="FARBMENU">
+				<field name="color_preset" type="list" default="1" label="PARAM_COLOR" description="DESC_PARAM_COLOR">
+                        <option value="1">OPTION_DEFAULT</option>
+                       	<option value="2">OPTION_GRUEN</option>
+                        <option value="3">OPTION_BLAU</option>
+						<option value="3">OPTION_ROT</option>
+				</field>
+				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
+				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
+				<field name="band_color" type="text" default="#1E5799" label="PARAM_BAND_FARBE" description="DESC_PARAM_BAND_FARBE" class="color" size="20" />
+				<field name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />
+				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
+                        <option value="1">OPTION_DEFAULT</option>
+                       	<option value="2">OPTION_CSS3</option>
+                         <option value="3">OPTION_AUS</option>
+				</field>
+				<field name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
+				<field name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
+				</fieldset>
+				
 				<fieldset name="javascripte" description="" label="JAVASCRIPTS">
 				<field name="fontsizeparam" type="radio" default="1" label="PARAM_FONTSIZE" description="DESC_PARAM_FONTSIZE">
                         <option value="1">OPTION_EIN</option>
