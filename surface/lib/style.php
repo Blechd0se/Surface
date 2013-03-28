@@ -283,6 +283,12 @@ background-color: #<? echo $dropdown_color; ?>;
 	border-top: 5px solid #<?php echo $dropdown_color; ?>;
 	}
 	
+	.Title{
+	    background-color:#<?php echo $band_color; ?>;
+	    outline: 1px dashed #<?php echo $dropdown_color; ?>;
+		
+	}
+
 	/* Customised Share icons */ 
 	
 	.social-icon {

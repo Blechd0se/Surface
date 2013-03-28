@@ -12,10 +12,6 @@ color: #555;
 }
 
 .tagInfo, .tagLink, .tagShare{
--moz-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
--webkit-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
-background-color: #f2f2f3;
 min-height: 1.3em;
 padding-top: 0.5em;
 padding-bottom: 0.2em;
@@ -23,13 +19,14 @@ padding-right: 1em;
 padding-left: 1em;
 color: #555;
 margin-bottom: 1em;
+background-color: #f5f5f5;
+outline: 1px dashed rgb(172, 172, 172);
+outline-offset: -5px;
+border-radius: 5px;
 }
 
 .tagShare{
--moz-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
--webkit-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
-box-shadow: inset -1px 2px 7px 0 #9e9c9c;
-min-height: 3em;
+min-height: 2.5em;
 padding-top: 0.7em;
 padding-left: 34%;
 margin-bottom: 1em;

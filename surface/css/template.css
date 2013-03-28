@@ -52,12 +52,19 @@ body {
 
 .Title {
 	float: left;
+	border-radius: 4px;
 	margin-top: 5em;
 	margin-left: 3%;
 	margin-bottom: 0.3em;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-size: 18px;
 	color: white;
-	text-shadow: 1px 1px 1px rgb(148, 148, 148);
+    outline-offset: -5px;
+    -webkit-box-shadow: 1px 1px 20px #505050;
+    -moz-box-shadow: 1px 1px 20px #505050;
+    box-shadow: 1px 1px 20px #505050;
+    
 }
 
 .Title a:link,.Title a:visited {

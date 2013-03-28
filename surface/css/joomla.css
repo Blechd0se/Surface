@@ -164,7 +164,7 @@ border-radius: 0 1px 1px 0;
 
 .moduletable h3, .moduletableaccordion h3
 {
-background-color: #f2f2f3;
+background-color: rgb(223, 223, 223);
 color: #585858;
 line-height: 30px;
 margin-bottom: -1em;
@@ -179,7 +179,7 @@ margin-bottom: -1em;
 }
 .moduletable ul li, .moduletableaccordion ul li
 {
-border-bottom: 1px dotted #CCC;
+border-bottom: 1px dotted rgb(223, 223, 223);
 margin-bottom: 5px;
 margin-top: 5px;
 padding-top: 3px;
@@ -238,14 +238,14 @@ a:link,a:visited, .separator {
 position: absolute;
 height: auto;
 margin-left: 1px;
-border-left: 1px solid #f2f2f3;
+border-left: 1px solid rgb(223, 223, 223);
 }
 
 .moduleplaceholderLeft{
 position: absolute;
 height: auto;
 margin-right: 1px;
-border-left: 1px solid #f2f2f3;
+border-left: 1px rgb(223, 223, 223);
 }
 
 .login_module {
