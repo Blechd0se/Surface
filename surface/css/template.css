@@ -63,6 +63,12 @@ body {
     outline-offset: -5px;
 }
 
+@-moz-document url-prefix() {
+.Title{
+	outline-offset: -20px;
+}
+}
+
 .Title a:link,.Title a:visited {
 	text-decoration: none;
 	color: white;
