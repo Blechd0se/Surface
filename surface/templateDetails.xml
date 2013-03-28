@@ -184,21 +184,6 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 				<field name="right_column" type="text" default="17%" label="PARAM_RIGHT_COLUMN" description="DESC_PARAM_RIGHT_COLUMN" size="20"></field>
 				<field name="main_column" type="text" default="60%" label="PARAM_MAIN_COLUMN" description="DESC_PARAM_MAIN_COLUMN" size="20"></field>
 				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>	
-              	<field hr="true" type="spacer" />
-                 <field name="ie_support" type="list" default="1" label="PARAM_IE" description="DESC_PARAM_IE">
-                        <option value="1">OPTION_EIN</option>
-                        <option value="0">OPTION_AUS</option>
-						<option value="2">OPTION_LEGACY</option>
-                </field>
-				<field name="mobil_support" type="list" default="1" label="PARAM_MOBIL" description="DESC_PARAM_MOBIL">
-                        <option value="1">OPTION_EIN</option>
-                        <option value="0">OPTION_AUS</option>
-                </field>
-				  <field name="kompression" type="radio" default="0" label="PARAM_COMP" description="DESC_PARAM_COMP">
-                        <option value="1">OPTION_EIN</option>
-                        <option value="0">OPTION_AUS</option>
-                </field>
-
     			</fieldset>
 				<!-- Farb-Menü -->
 				<fieldset name="farbmenu" description="" label="FARBMENU">
