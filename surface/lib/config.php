@@ -47,6 +47,7 @@ $page_title                                      = $this->params->get("page_titl
 $ie_support                                      = $this->params->get("ie_support");
 $image                                           = $this->params->get("image");
 $anzeige_dauer                                   = $this->params->get("anzeige_dauer");
+$gzip_kompression                                = $this->params->get("gzip_kompression");
 
 $copyright = "true";
 $app			= JFactory::getApplication();

@@ -3,16 +3,19 @@
 /**
  * @package		Surface.site
  * @subpackage	Templates.Surface
- * @copyright	Copyright (C) 2009 - 2012 Blechdose. All rights reserved.
+ * @copyright	Copyright (C) 2009 - 2013 Blechdose. All rights reserved.
  */
 
 require_once dirname(__FILE__) . DS . '/lib/config.php';
 require_once dirname(__FILE__) . DS . '/lib/core.php';
 require_once dirname(__FILE__) . DS . '/lib/timer.php';
-// Disable it for the moment:
-//gzip_compression();
 
 header('Vary: Accept-Encoding');
+// gzip compression switch:
+if($gzip_compression) :
+	gzip_compression();
+endif;
+
 defined('_JEXEC') or die;
 ?>
 <!DOCTYPE html>
@@ -22,7 +25,7 @@ defined('_JEXEC') or die;
 	dir="<?php echo $this->direction; ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="version" content="1.1 Build: 18032012 // Blechdose" />
+<meta name="version" content="1.1 Build: 28032012 // Blechdose" />
 <?php  
 // Browserweiche aufrufen
 // Cookies auslesen
@@ -482,4 +485,8 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	<?php endif; ?>
 </body>
 </html>
-<?php } ?>
+<?php }
+if($gzip_compression) :
+  ob_end_flush();
+ endif;
+?>
