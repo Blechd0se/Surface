@@ -61,10 +61,6 @@ body {
 	font-size: 18px;
 	color: white;
     outline-offset: -5px;
-    -webkit-box-shadow: 1px 1px 20px #505050;
-    -moz-box-shadow: 1px 1px 20px #505050;
-    box-shadow: 1px 1px 20px #505050;
-    
 }
 
 .Title a:link,.Title a:visited {
@@ -299,11 +295,6 @@ position: relative;
 border-radius: 5px;
 }
 
-
-.copyBrand a:link, .copyBrand a:visited, .copyBrand p{
-	color: white;
-}
-
 .copyBrand a:hover {
 	color: black;
 }
@@ -484,7 +475,6 @@ border-radius: 5px;
 	position: absolute;
 	margin-top: 23.5em;
 	text-align: right;
-	color: #FFF;
 	font-size: 10px;
 	font-family: 'Trebuchet MS, Arial, Helvetica, Sans-Serif', sans-serif;
 }

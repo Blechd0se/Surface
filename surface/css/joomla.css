@@ -84,10 +84,15 @@ img
 	margin-right: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	display: inline-block;
 }
 
 .moduletable ul li:first-child, .moduletableaccordion ul li:first-child{
 padding-top: 1em;
+}
+
+.moduletable ul li:hover, .moduletableaccordion ul li:hover{
+background-color: rgb(223, 223, 223);
 }
 
 
@@ -138,6 +143,7 @@ background-color: #585858;
 color: #585858;
 content: '.';
 float: right;
+margin-left: 10px;
 display: inline-block;
 border-radius: 1px 0 0 1px;
 -moz-border-radius: 1px 0 0 1px;
@@ -169,6 +175,10 @@ color: #585858;
 line-height: 30px;
 margin-bottom: -1em;
 
+}
+
+.Right>.moduletable h3, .Right>.moduletableaccordion h3 {
+text-align: right;
 }
 
 .moduletable a, .moduletableaccordion a
@@ -214,10 +224,23 @@ padding-bottom: 1em;
 }
 
 ul, menu, dir {
-	list-style-type: circle;
-	margin-left: -10px;
+	list-style-type: none;
+	margin-left: -12px;
 
 }
+
+.moduletable ul li:before, .moduletableaccordion ul li:before{
+	content: "●  ";
+	margin-left: -1em;
+	color: rgb(90, 90, 90);
+}
+
+.moduletable ul li.current:before, .moduletableaccordion ul li.current:before{
+	content: "►  ";
+	margin-left: -1em;
+	color: rgb(90, 90, 90);
+}
+
 .search_menu
 {
 	position: relative;
