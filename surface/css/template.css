@@ -236,6 +236,7 @@ body {
 .StripeMenu>ul.menu ul ul a {
 	background-color: #c4c4c4;
 	margin-left: 175px;
+	-webkit-transition: all 0.2s;
 }
 
 .StripeMenu>ul.menu ul ul ul a {
