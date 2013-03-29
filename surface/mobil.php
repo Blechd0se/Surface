@@ -12,6 +12,8 @@
 <?php 
 require_once dirname(__FILE__) . DS . '/lib/style.php';
 ?>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
 <style type="text/css">
 	body{
 	background: white;
@@ -33,8 +35,9 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 			<?php if ($this->countModules( 'headermodule' )) : ?>
 			<jdoc:include type="modules" name="headermodule" />
 			<?php elseif($page_title_default) : ?>
-				<?php	 $app    = &JFactory::getApplication();
+				<a href="index.php"> <?php	 $app    = &JFactory::getApplication();
 				echo $app->getCfg('sitename');
+			
 
 				else :
 
@@ -42,21 +45,35 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 
 				endif;
 				?>
-				<div class="MobileMenu"><a href="#"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/mobilemenu.png"> </a></div>
+				</a>
+				<div class="MobileMenu"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/mobilemenu.png"></div>
 				</h1></div>	
 			
-				<div class="StripeContent">
-					<div class="StripeMenu">
+					<div class="MobileMenuSelection">
 					<!-- Definition der modulposition "mobil" -->
-						<jdoc:include type="modules" name="mobil" />
+					<jdoc:include type="modules" name="user3" />
 					</div>
-				</div>
+			
+			
+			<?php echo "<script type='text/javascript'>$(function() {
+    	    $('.MobileMenu').click(function() {
+            var elem = $('.MobileMenuSelection');
+       		 if (elem.css('display') == 'none') {
+             elem.slideDown(500);
+        		}
+       			  else {
+            	  elem.slideUp(500);
+        		}
+    		});
+			});</script>";
+			?>
+			
 				<div class="MobileContent">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 				</div>
 
-	<div class="Footer">
+						<div class="MobileFooter">
 						<?php if($scrolling == "true") : ?>
 						<!-- BEGINNE: Scrolling-Button -->
 							<a class="scrolling" href="#page" id="page"></a>
@@ -67,12 +84,9 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 							<jdoc:include type="modules" name="footer" style="xhtml" />
 						<?php endif; ?>
 
-
-
-
 						<?php if($timerrun == "true") : ?>
 						<!-- BEGINNE: Timer -->
-						<div class="timer">
+						<div class="MobileTimer">
 							<p>
 								<?php echo JText::_( 'PAGE_CLASS' ); ?>
 								<?php $endTime = endTime($timer); echo $endTime . ' ' . ""; ?>
@@ -84,6 +98,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 						<?php endif; ?>				
 							<jdoc:include type="modules" name="copyright" />
 	</div>
+
 	<jdoc:include type="modules" name="debug" />
 </body>
 </html>
