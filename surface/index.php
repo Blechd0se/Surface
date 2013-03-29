@@ -53,15 +53,9 @@ $this->setHeadData($headerstuff);
 <script type="text/javascript"
 	src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/mootools.js"></script>
 <?php endif; ?>
-<link rel="stylesheet"
-	href="<?php echo $this->baseurl ?>/templates/system/css/general.css"
-	type="text/css" />
-<link rel="stylesheet"
-	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/infotag.css"
-	type="text/css" />
-<link rel="stylesheet"
-	href="<?php echo $this->baseurl ?>/templates/system/css/system.css"
-	type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/infotag.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <?php if($kompression) : ?>
 <link rel="stylesheet" type="text/css"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/css_compress.php" />
@@ -72,9 +66,7 @@ $this->setHeadData($headerstuff);
 
 <?php if($fontsizeparam) : ?>
 <!-- BEGINNE: FONTSIZE -->
-<link rel="stylesheet"
-	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/fontsize.css"
-	type="text/css" />
+<link rel="stylesheet" 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/fontsize.css" type="text/css" />
 <!-- END: FONTSIZE -->
 <?php endif; ?>
 <?php endif; ?>
@@ -329,7 +321,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 							width="48" height="48" alt="Arrow Prev"> </a> <a href="#"
 							class="next"><img
 							src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/right_next.png"
-							width="48" height="48" alt="Arrow Next"> </a>
+							width="40" height="50" alt="Arrow Next"> </a>
 						<?php endif; ?>
 					</div>
 				</div>

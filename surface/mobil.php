@@ -8,17 +8,32 @@
  ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <jdoc:include type="head" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/mobiltemplate.css" type="text/css" />
+<?php 
+require_once dirname(__FILE__) . DS . '/lib/style.php';
+?>
+<style type="text/css">
+	body{
+	background: white;
+	font-size: 2.3rem;
+	margin: 0px;
+	}
+	
+    h2{
+    background-color: #<?php echo $band_color; ?>;
+    }
+    
+    h2:before{
+    background-color: #<?php echo $dropdown_color; ?>;
+    color: #<?php echo $dropdown_color; ?>;
+    }
+</style>
 </head>
-<body class="contentpane" id="page">
-	<div class="MainBackground"></div>
-	</div>
-<div class="MainSheet">
-		<div class="Title">
+		<div class="MobileTitle"><h1>
 			<?php if ($this->countModules( 'headermodule' )) : ?>
 			<jdoc:include type="modules" name="headermodule" />
-			<?php elseif($page_title_default == "true") : ?>
-			<h1>
-				<a href="index.php"> <?php	 $app    = &JFactory::getApplication();
+			<?php elseif($page_title_default) : ?>
+				<?php	 $app    = &JFactory::getApplication();
 				echo $app->getCfg('sitename');
 
 				else :
@@ -27,22 +42,20 @@
 
 				endif;
 				?>
-				</a>
-			</h1>
-		</div>		
-	<div class="MainContent">
+				<div class="MobileMenu"><a href="#"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/mobilemenu.png"> </a></div>
+				</h1></div>	
+			
 				<div class="StripeContent">
 					<div class="StripeMenu">
 					<!-- Definition der modulposition "mobil" -->
 						<jdoc:include type="modules" name="mobil" />
 					</div>
 				</div>
-				<div class="Content">
+				<div class="MobileContent">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 				</div>
 
-	</div>		
 	<div class="Footer">
 						<?php if($scrolling == "true") : ?>
 						<!-- BEGINNE: Scrolling-Button -->
@@ -71,7 +84,6 @@
 						<?php endif; ?>				
 							<jdoc:include type="modules" name="copyright" />
 	</div>
-</div>
 	<jdoc:include type="modules" name="debug" />
 </body>
 </html>

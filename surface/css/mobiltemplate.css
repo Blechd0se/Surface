@@ -1,0 +1,79 @@
+body{
+	background-color: white;
+	color: #555;
+	}
+	
+	a:link, a:visited, .separator {
+	color: rgb(90, 90, 90);
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+	h2>a:link, h2>a:visited, h2>.separator{
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	}
+
+.MobileTitle {
+	width: 100%;
+	padding-left: 0.75em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	color: white;
+    outline-offset: -0.3em;
+    border-radius: 0 0 0.3em 0;
+}
+
+.MobileMenu{
+	float: right;
+	margin-top: -0.1em;
+	margin-right: 0.75em;
+}
+
+.MobileContent{
+	width: 100%;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	font-family: Helvetica;
+}
+
+h2{
+	margin-top: 2.5em;
+	line-height: 1.5em;
+	margin-left: -0.5em;
+	color: white;
+	width: 99.8%;
+	border-radius: 0 0.2em 0.2em 0;
+}
+
+h2:before{
+	width: 0.5em;
+	color: #585858;
+	content: "'";
+	display: inline-blocK;
+	margin-right: 10px;
+	border-radius: 0 1px 1px 0;
+	-moz-border-radius: 0 1px 1px 0;
+	-o-border-radius: 0 1px 1px 0; 
+	-ms-border-radius: 0 1px 1px 0; 
+	-webkit-border-radius: 0 1px 1px 0; 
+}
+
+h2:after {
+	content: " ";
+	float: right;
+	height: 0;
+	width: 0;
+	border-top: 0.8em solid transparent;
+	border-bottom: 0.8em solid transparent;
+	border-right: 0.8em solid white;
+	border-radius: 0 1px 1px 0;
+	-moz-border-radius: 0 1px 1px 0;
+	-o-border-radius: 0 1px 1px 0; 
+	-ms-border-radius: 0 1px 1px 0; 
+	-webkit-border-radius: 0 1px 1px 0; 
+}
+
