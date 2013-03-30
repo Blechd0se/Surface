@@ -196,27 +196,27 @@ echo '<div class="tagShare" style="display:none">';
 
 //twitter
 echo '<div class="social-icon">' ?>
-<a href="http://twitter.com/home?status=<?php echo getSiteName(); ?>" target="_blank" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/twitter.png" width="25" height="25" alt="twitter"> </a>
+<a href="http://twitter.com/home?status=<?php echo getSiteName(); ?>" target="_blank" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/twitter.png" width="100%" height="100%" alt="twitter"> </a>
 <?php echo '</div>';
 
 //facebook
 echo '<div class="social-icon">' ?>
-<a href="http://www.facebook.com/share.php?u=<?php echo getSiteName(); ?>"  target="_blank"><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/facebook.png" width="25" height="25" alt="twitter"> </a>
+<a href="http://www.facebook.com/share.php?u=<?php echo getSiteName(); ?>"  target="_blank"><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/facebook.png" width="100%" height="100%" alt="twitter"> </a>
 <?php echo '</div>';
 
 //mail
 echo '<div class="social-icon">' ?>
-<a href="mailto:?subject=Link:%20<?php echo getSiteName(); ?>" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/mail.png" width="25" height="25" alt="twitter"> </a>
+<a href="mailto:?subject=Link:%20<?php echo getSiteName(); ?>" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/mail.png" width="100%" height="100%" alt="twitter"> </a>
 <?php echo '</div>';
 
 //google+
 echo '<div class="social-icon">' ?>
-<a href="https://plus.google.com/share?url=<?php echo getSiteName(); ?>" target="_blank" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/google.png" width="25" height="25" alt="twitter"> </a>
+<a href="https://plus.google.com/share?url=<?php echo getSiteName(); ?>" target="_blank" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/google.png" width="100%" height="100%" alt="twitter"> </a>
 <?php echo '</div>';
 
 //print
 echo '<div class="social-icon">' ?>
-<a href="javascript:window.print();" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/print.png" width="25" height="25" alt="twitter"> </a>
+<a href="javascript:window.print();" ><img src="<?php echo $this->baseurl ?>/templates/surface/<?php echo $this->template; ?>images/share-icons/print.png" width="100%" height="100%" alt="twitter"> </a>
 <?php echo '</div>';
 echo '</div>';
 

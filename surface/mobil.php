@@ -19,6 +19,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	background: white;
 	font-size: 2.3rem;
 	margin: 0px;
+	margin-right: 1.5em;
 	}
 	
     h2{
@@ -59,10 +60,10 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     	    $('.MobileMenu').click(function() {
             var elem = $('.MobileMenuSelection');
        		 if (elem.css('display') == 'none') {
-             elem.slideDown(500);
+             elem.slideDown(200);
         		}
        			  else {
-            	  elem.slideUp(500);
+            	  elem.slideUp(200);
         		}
     		});
 			});</script>";
