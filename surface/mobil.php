@@ -17,6 +17,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 <style type="text/css">
 	body{
 	background: white;
+	font-size: 18px;
 	font-size: 2.3rem;
 	margin: 0px;
 	margin-right: 1.5em;
@@ -29,6 +30,10 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     h2:before{
     background-color: #<?php echo $dropdown_color; ?>;
     color: #<?php echo $dropdown_color; ?>;
+    }
+    
+    p{
+    width: 100%;
     }
 </style>
 </head>

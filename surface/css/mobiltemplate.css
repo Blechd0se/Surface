@@ -48,12 +48,15 @@ body{
 
 .MobileContent{
 	width: 100%;
+	width:device-width;
+	initial-scale: 1.0;
 	padding-left: 0.75em;
 	padding-right: 0.75em;
 	font-family: Helvetica;
 }
 
 .MobileFooter{
+	font-size: 12px;
 	font-size: 1rem;
 	text-align: center;
 	padding-top: 1em;
@@ -63,6 +66,7 @@ body{
 }
 
 .MobileTimer{
+	font-size: 12px;
 	font-size: 1rem;
 	text-align: center;
 	padding-top: 1em;
@@ -72,6 +76,7 @@ body{
 
 .MobileMenuSelection{
 	display: none;
+	font-size: 18px;
 	font-size: 2.5rem;
 	font-family: Helvetica;
 	font-weight: bold;
