@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/mobiltemplate.css" type="text/css" />
 <meta name="format-detection" content="telephone=no">
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.js"></script>
+<?php 
+// include our style.php:
+require_once dirname(__FILE__) . DS . '/lib/style.php';
+?>
 </head>
 		<div class="MobileTitle"><h1>
 			<?php if ($this->countModules( 'headermodule' )) : ?>
