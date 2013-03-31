@@ -12,6 +12,9 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <style type="text/css">
+<?php 
+	// Not mobile :
+	if (!$mobile_support) : ?>
 	body { 
 	font-family: <?php echo $font_content; ?>;
 	
@@ -317,7 +320,9 @@ defined('_JEXEC') or die('Restricted access');
 	-o-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
 	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;	
 }
-
+<?php 
+// Shared Components could be inserted after this endif;
+	endif; ?>
 
 <?php 
 	// Mobile Switch:
