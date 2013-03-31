@@ -35,59 +35,62 @@ defined('_JEXEC') or die('Restricted access');
 			background: #<?php echo $con_bg_color; ?>;
 			<?php endif; ?>
 			font-size: 12px;
-		   }
+	}
 	
 
-.ArrowLeft{
-border-right:20px solid #<?php echo $band_color; ?>;
-}
+	.ArrowLeft{
+	border-right:20px solid #<?php echo $band_color; ?>;
+	}
 
-.ArrowRight{
-border-left:20px solid #<?php echo $band_color; ?>;
-}
+	.ArrowRight{
+	border-left:20px solid #<?php echo $band_color; ?>;
+	}
 
-.StripeBackground{
+	.StripeBackground{
 	background-color: #<?php echo $band_color; ?>;
 	margin: 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px 0 <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
-}
+	}
 
-input.signin_submit{
-background-color: #<?php echo $module_color; ?>;
-}
+	input.signin_submit{
+	background-color: #<?php echo $module_color; ?>;
+	}
 
-#signin_menu input{
-border:1px solid #<?php echo $dropdown_color; ?>;
+	#signin_menu input{
+	border:1px solid #<?php echo $dropdown_color; ?>;
+	}
 
-}
-.StripeContent{
-background-color: #<?php echo $band_color; ?>;
-}
+	.StripeContent{
+	background-color: #<?php echo $band_color; ?>;
+	}
 
-.StripeMenu>ul.menu li:hover>a, .StripeMenu>ul.menu span.separator:hover{
-background-color: #<? echo $dropdown_color; ?>;
-}
+	.StripeMenu>ul.menu li:hover>a, .StripeMenu>ul.menu span.separator:hover{
+	background-color: #<? echo $dropdown_color; ?>;
+	}
 
-.StripeMenu>ul.menu ul a{
-background-color:  #<? echo $dropdown_color; ?>;
-border: 1px groove #<?php echo $band_color; ?>;
-}
+	.StripeMenu>ul.menu ul a{
+	background-color:  #<? echo $dropdown_color; ?>;
+	border: 1px groove #<?php echo $band_color; ?>;
+	}
 
-.StripeMenu>ul.menu li a:hover, .StripeMenu>ul.menu li.current a, .StripeMenu>ul.menu span.separator:hover{
-background-color: #<? echo $dropdown_color; ?>;
-}
+	.StripeMenu>ul.menu li a:hover, .StripeMenu>ul.menu li.current a, .StripeMenu>ul.menu span.separator:hover{
+	background-color: #<? echo $dropdown_color; ?>;
+	}
 
 
 	a:hover,a:active, span.separator:active,span.separator:hover{
 	color:#<?php echo $module_color; ?>;
 	text-decoration:underline;
 	border: none;
-}
+	}
 	
 	.date {
 	font-family: <?php echo $font_content; ?>;
 	}
 	
-	#header ul li ul { background: #<?php echo $dropdown_color; ?>; }
+	#header ul li ul {
+	background: #<?php echo $dropdown_color; ?>; 
+	}
+	
 	<?php if($mainsheet_rounded) : ?>
 	.MainContent, #topnav a.signin, #signin_menu, #header ul li ul, .inputbox, #fontsize,
 	.moduletable, .moduletableaccordion, .moduletablesearch, .MainHeading, .Content, .Content_ext_right
@@ -98,6 +101,7 @@ background-color: #<? echo $dropdown_color; ?>;
 		-ms-border-radius: 2px; 
 		-webkit-border-radius: 2px; 
 	}
+	
 	#signin_submit, #signin_menu input[type=text], #signin_menu input[type=password], input.signin_submit, .button {
 		border-radius: 4px;
 		-moz-border-radius: 4px;
@@ -105,6 +109,7 @@ background-color: #<? echo $dropdown_color; ?>;
 		-o-border-radius: 4px; 
 		-ms-border-radius: 4px; 
 	}
+	
 	.inputboxsearch {
 		border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -112,6 +117,7 @@ background-color: #<? echo $dropdown_color; ?>;
 		-o-border-radius: 3px; 
 		-ms-border-radius: 3px; 
 	}
+	
 	.button, input.buttonsearch {
 		border-radius: 2px;
 		-moz-border-radius: 2px;
@@ -119,6 +125,7 @@ background-color: #<? echo $dropdown_color; ?>;
 		-o-border-radius: 2px; 
 		-ms-border-radius: 2px; 
 	}
+	
 	#main .pagination li {
 		border: 1px solid #CACACA;
 		border-radius: 5px;
@@ -248,7 +255,6 @@ background-color: #<? echo $dropdown_color; ?>;
 	}
 
 	/* Customised native CSS arrows */
-	
 	.LeftArrowSpace{
 	float:left;
 	width: <?php echo substr($main_size, 0, strlen($main_size)-2)-35;?>px;
@@ -288,13 +294,7 @@ background-color: #<? echo $dropdown_color; ?>;
 	    outline: 1px dashed #<?php echo $dropdown_color; ?>;
 	    -moz-outline: 1px dashed #?<php echo $dropdown_color; ?>;
 	}
-	
-	.MobileTitle{
-	background-color:#<?php echo $band_color; ?>;
-	outline: 3px dashed #<?php echo $dropdown_color; ?>;
-	-moz-outline: 3px dashed #?<php echo $dropdown_color; ?>;
-	}
-	
+		
 	.copyBrand a:link, .copyBrand a:visited, .copyBrand p{
 	color: #<?php echo $band_color; ?>;
 	}
@@ -303,8 +303,8 @@ background-color: #<? echo $dropdown_color; ?>;
 	color: #<?php echo $band_color; ?>;
 	}
 
+
 	/* Customised Share icons */ 
-	
 	.social-icon {
 	background-image: linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
 	background-image: -o-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);

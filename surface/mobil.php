@@ -10,10 +10,7 @@
 <jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/mobiltemplate.css" type="text/css" />
 <meta name="format-detection" content="telephone=no">
-<?php 
-require_once dirname(__FILE__) . DS . '/lib/style.php';
-?>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 
 <style type="text/css">
 	body{
@@ -38,6 +35,28 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     width: 100%;
     }
     
+    .MobileTitle{
+	background-color:#<?php echo $band_color; ?>;
+	outline: 3px dashed #<?php echo $dropdown_color; ?>;
+	-moz-outline: 3px dashed #?<php echo $dropdown_color; ?>;
+	}
+    
+    .social-icon {
+	background-image: linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -o-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -moz-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -ms-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #<?php echo $dropdown_color; ?>), color-stop(1, #<?php echo $module_color; ?>) );
+	-webkit-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	}
+	
+	#tagCircleIn, #tagCircleSh, #tagCircleLi{
+	background-color: #<?php echo $dropdown_color; ?>;
+	}
 </style>
 </head>
 		<div class="MobileTitle"><h1>
@@ -76,7 +95,6 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     		});
 			});</script>";
 			?>
-			
 				<div class="MobileContent">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
