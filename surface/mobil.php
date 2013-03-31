@@ -4,7 +4,6 @@
  * @subpackage	Templates.Surface
  * @copyright	Copyright (C) 2009 - 2013 Blechdose. All rights reserved.
  */
- setcookie("IE", "true", time()+60*60*24); // 1 Tag
  ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <jdoc:include type="head" />
@@ -54,7 +53,7 @@
 				</div>
 
 						<div class="MobileFooter">
-						<?php if($scrolling == "true") : ?>
+						<?php if($scrolling) : ?>
 						<!-- BEGINNE: Scrolling-Button -->
 							<a class="scrolling" href="#page" id="page"></a>
 						<!-- END: Scrolling-Button -->
