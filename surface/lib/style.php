@@ -315,6 +315,58 @@ defined('_JEXEC') or die('Restricted access');
 	-webkit-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
 	-moz-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
 	-o-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
-	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;	
 }
+
+
+<?php 
+	// Mobile Switch:
+	if ($mobile_support) : ?>
+	body{
+	background: white;
+	font-size: 18px;
+	font-size: 2.3rem;
+	margin: 0px;
+	margin-right: 1.5em;
+	display: block;
+	}
+	
+    h2{
+    background-color: #<?php echo $band_color; ?>;
+    }
+    
+    h2:before{
+    background-color: #<?php echo $dropdown_color; ?>;
+    color: #<?php echo $dropdown_color; ?>;
+    }
+    
+    p{
+    width: 100%;
+    }
+    
+    .MobileTitle{
+	background-color:#<?php echo $band_color; ?>;
+	outline: 3px dashed #<?php echo $dropdown_color; ?>;
+	-moz-outline: 3px dashed #?<php echo $dropdown_color; ?>;
+	}
+    
+    .social-icon {
+	background-image: linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -o-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -moz-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -ms-linear-gradient(bottom, #<?php echo $dropdown_color; ?> 0%, #<?php echo $module_color; ?> 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #<?php echo $dropdown_color; ?>), color-stop(1, #<?php echo $module_color; ?>) );
+	-webkit-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	box-shadow: inset 0px 1px 0px #<?php echo $module_color; ?>, 0px 3px 0px 0px #<?php echo $dropdown_color; ?>, 0px 5px 5px #999;
+	}
+	
+	#tagCircleIn, #tagCircleSh, #tagCircleLi{
+	background-color: #<?php echo $dropdown_color; ?>;
+	}
+<?php endif; ?>
+	
+
 </style>
