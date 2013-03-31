@@ -10,7 +10,7 @@
 <jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/mobiltemplate.css" type="text/css" />
 <meta name="format-detection" content="telephone=no">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery.js"></script>
 
 <style type="text/css">
 	body{
