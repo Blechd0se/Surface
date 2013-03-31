@@ -9,6 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/mobiltemplate.css" type="text/css" />
+<meta name="format-detection" content="telephone=no">
 <?php 
 require_once dirname(__FILE__) . DS . '/lib/style.php';
 ?>
@@ -21,6 +22,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	font-size: 2.3rem;
 	margin: 0px;
 	margin-right: 1.5em;
+	display: block;
 	}
 	
     h2{
@@ -35,6 +37,7 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     p{
     width: 100%;
     }
+    
 </style>
 </head>
 		<div class="MobileTitle"><h1>
