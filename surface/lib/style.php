@@ -14,7 +14,7 @@ defined('_JEXEC') or die('Restricted access');
 <style type="text/css">
 <?php 
 	// Not mobile :
-	if (!$mobile_support) : ?>
+	if (!detect_mobil()) : ?>
 	body { 
 	font-family: <?php echo $font_content; ?>;
 	
@@ -326,7 +326,7 @@ defined('_JEXEC') or die('Restricted access');
 
 <?php 
 	// Mobile Switch:
-	if ($mobile_support) : ?>
+	if (detect_mobil()) : ?>
 	body{
 	background: white;
 	font-size: 18px;
