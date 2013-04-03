@@ -25,10 +25,6 @@ outline-offset: -5px;
 border-radius: 5px;
 }
 
-.tagInfo li, .tagLink li, .tagShare li{
-list-style: none;
-}
-
 .tagShare{
 min-height: 2.5em;
 padding-top: 0.7em;
@@ -78,7 +74,6 @@ margin-left: -100%;
   transition-property:width,height,transform,background,opacity;
   transition-duration:1s,1s,1s,1s,1s;
   }
-  
   
   #tagCircleIn:hover, #tagCircleSh:hover, #tagCircleLi:hover{
 	-moz-transform: rotate(360deg);

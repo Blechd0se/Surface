@@ -169,6 +169,11 @@ echo '<div class="tag"><div class="tagWrapper"><div id="tagRight"><div id="tagCi
 <?php if ($useDefList) : ?>
 	</dl>
 <?php endif; ?>
+<?php if ($canEdit) : ?>
+			<li class="edit-icon">
+			<?php echo JHtml::_('icon.edit', $this->item, $params); ?>
+			</li>
+<?php endif; ?>
 <? echo '</div>';?>
 
 

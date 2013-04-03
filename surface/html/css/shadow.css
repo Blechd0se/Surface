@@ -1,0 +1,77 @@
+/* CSS Document */
+/* Shadows */
+
+
+/* 10px Schatten: */
+.MenueRight, .MainHeading, #header ul li ul, 
+.moduletablesearch, #article-index, #signin_menu
+
+{
+	-moz-box-shadow: 0 0 3px #000;
+	-webkit-box-shadow: 0 0 3px #000;
+	box-shadow: 0 0 3px #000;
+}
+/* Fix für Menu-Icons */
+div.Content #main ul li a img {
+	-moz-box-shadow: 0 0 0px #000;
+	-webkit-box-shadow: 0 0 0px #000;
+	box-shadow: 0 0 0px #000;
+}
+/* 5px Schatten: */
+.MainContent, .RightPicture, #topnav a.signin, .LayerOne, .LayerTwo 
+{
+	-moz-box-shadow: 0 0 5px #4d4d4d;
+	-webkit-box-shadow: 0 0 5px #4d4d4d;
+	box-shadow: 0 0 5px #4d4d4d;
+}
+
+
+.readmore a 
+{
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+}
+
+
+#main .pagination li
+{
+	box-shadow: inset 0 1px 2px white,0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+	
+.StripeMenu>ul.menu li a:hover, .StripeMenu>ul.menu li.current a, .StripeMenu>ul.menu span.separator:hover{
+-moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Title{
+-moz-box-shadow: 0px 1px 10px #505050;
+-webkit-box-shadow: 0px 1px 10px #505050;
+box-shadow: 0px 1px 10px #505050;
+}
+
+.StripeMenu>ul.menu li:hover>a, .StripeMenu>ul.menu span.separator:hover{
+-moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.StripeBackground{
+box-shadow: 0px 1px 80px 0px #505050;
+-webkit-box-shadow: 0px 1px 80px 0px #505050;
+-moz-box-shadow: 0px 1px 80px 0px #505050;
+}
+
+.PolishedFront {
+	box-shadow: 0px 1px 3px 0px #363639;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
+	box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, .4);
+}
+
+.StripeContent {
+	-moz-box-shadow: 0.5px 1px 2px 0.1px rgb(155, 155, 155);
+	-webkit-box-shadow: 0.5px 1px 2px 0.1px rgb(155, 155, 155);
+	box-shadow: 0.5px 1px 2px 0.1px rgb(155, 155, 155);
+}

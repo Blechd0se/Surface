@@ -1,0 +1,15 @@
+/* Style by Blechdose. */
+/*  Scrolling  */
+.scrolling {
+	clear: both;
+	position: fixed;
+	right: 40px;
+	bottom: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.scrolling a:hover, .scrolling a{
+	text-decoration: none;
+	color: white;
+ }
