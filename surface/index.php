@@ -104,6 +104,19 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 <link rel="stylesheet" type="text/css"
 	href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/scrolling.css" />
 <script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 700 }); });</script>
+
+<script type="text/javascript">
+    window.onscroll = function()
+    {
+        if (document.documentElement.scrollTop > 200 || self.pageYOffset > 200) {
+            $('.scrolling').fadeIn("slow");
+        } else if (document.documentElement.scrollTop < 200 || self.pageYOffset < 200) {
+            $('.scrolling').fadeOut("slow");
+
+        }
+    
+}
+    </script>
 <!-- END: Scroll-Effekt -->
 <?php endif; ?>
 <?php if($javascript_slider) : ?>
