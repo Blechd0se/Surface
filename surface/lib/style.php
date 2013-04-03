@@ -298,14 +298,6 @@ defined('_JEXEC') or die('Restricted access');
 	    -moz-outline: 1px dashed #?<php echo $dropdown_color; ?>;
 	}
 		
-	.copyBrand a:link, .copyBrand a:visited, .copyBrand p{
-	color: #<?php echo $band_color; ?>;
-	}
-	
-	.date{
-	color: #<?php echo $band_color; ?>;
-	}
-
 
 	/* Customised Share icons */ 
 	.social-icon {

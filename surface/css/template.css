@@ -306,6 +306,11 @@ border-radius: 5px;
 	color: black;
 }
 
+	.copyBrand a:link, .copyBrand a:visited, .copyBrand p{
+	color: white;
+	}
+	
+
 .RightPicture {
 	clear: left;
 	margin-top: -11em;
@@ -480,6 +485,7 @@ border-radius: 5px;
 /* Ende Top Level */
 .date {
 	position: absolute;
+	color: white;
 	margin-top: 23.5em;
 	text-align: right;
 	font-size: 10px;
