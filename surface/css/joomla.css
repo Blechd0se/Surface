@@ -59,13 +59,19 @@ img
 	border: none;	/* IE-Fix */
 }
 
-.moduletable, .moduletableaccordion, .moduletablesearch
+.moduletable, .moduletableaccordion
 {
 	margin-top: 10px;
 	background-color: #FFF;
 	padding: 0px 0px 2px 0px;
 }
 
+#searching>.moduletable
+{
+	margin-top: 10px;
+	background-color: transparent;
+	padding: 0px 0px 0px 0px;
+}
 
 .StripeMenu>#accordion, .StripeMenu>.menu{
 	border-right: 0px;
