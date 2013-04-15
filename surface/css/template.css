@@ -210,6 +210,10 @@ body {
 	font-size: 1.1em;
 	text-decoration: none;
 	background: none;
+	-webkit-transition: all 100ms linear;
+	transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-o-transition:  all 100ms linear;
 }
 
 .StripeMenu>ul.menu li:hover>ul {
@@ -226,6 +230,10 @@ body {
 
 .StripeMenu>ul.menu li li a {
 	width: 150px;
+	-webkit-transition: all 100ms linear;
+	transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-o-transition:  all 100ms linear;
 }
 
 .StripeMenu>ul.menu a {
@@ -525,6 +533,11 @@ background-color: #dcdcdc;
 	height: 30px;
 	right: 1em;
 	top: 0.5em;
+}
+
+#searching {
+	float: right;
+	margin-right: 1em;
 }
 
 #searching input {

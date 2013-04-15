@@ -235,7 +235,9 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
 	<div class="MainBackground"></div>
 	<div class="MenueRight">
 
-		<div id="searching"></div>
+		<div id="searching">
+        <jdoc:include type="modules" name="searchload" style="xhtml"/>  
+		</div>
 
 	</div>
 

@@ -3,7 +3,7 @@
 
 
 /* 10px Schatten: */
-.MenueRight, .MainHeading, #header ul li ul, 
+.MainHeading, #header ul li ul, 
 .moduletablesearch, #article-index, #signin_menu
 
 {
@@ -25,7 +25,6 @@ div.Content #main ul li a img {
 	box-shadow: 0 0 5px #4d4d4d;
 }
 
-
 .readmore a 
 {
 	-moz-box-shadow: 0 0 5px #888;
@@ -33,34 +32,33 @@ div.Content #main ul li a img {
 	box-shadow: 0 0 5px #888;
 }
 
-
 #main .pagination li
 {
 	box-shadow: inset 0 1px 2px white,0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 	
 .StripeMenu>ul.menu li a:hover, .StripeMenu>ul.menu li.current a, .StripeMenu>ul.menu span.separator:hover{
--moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
--webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .Title{
--moz-box-shadow: 0px 1px 10px #505050;
--webkit-box-shadow: 0px 1px 10px #505050;
-box-shadow: 0px 1px 10px #505050;
+	-moz-box-shadow: 0px 1px 10px #505050;
+	-webkit-box-shadow: 0px 1px 10px #505050;
+	box-shadow: 0px 1px 10px #505050;
 }
 
 .StripeMenu>ul.menu li:hover>a, .StripeMenu>ul.menu span.separator:hover{
--moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
--webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .StripeBackground{
-box-shadow: 0px 1px 80px 0px #505050;
--webkit-box-shadow: 0px 1px 80px 0px #505050;
--moz-box-shadow: 0px 1px 80px 0px #505050;
+	box-shadow: 0px 1px 80px 0px #505050;
+	-webkit-box-shadow: 0px 1px 80px 0px #505050;
+	-moz-box-shadow: 0px 1px 80px 0px #505050;
 }
 
 .PolishedFront {
