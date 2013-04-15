@@ -363,6 +363,10 @@ defined('_JEXEC') or die('Restricted access');
 	#tagCircleIn, #tagCircleSh, #tagCircleLi{
 	background-color: #<?php echo $dropdown_color; ?>;
 	}
+	
+	.MobileMenuSelection{
+	background-color: #<?php echo $dropdown_color; ?>;
+	}
 <?php endif; ?>
 	
 
