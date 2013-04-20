@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
-<extension version="2.5" type="template" client="site" method="upgrade">
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<install type="template" version="1.5" method="upgrade">
 	<name>Surface</name>
 	<creationDate>26.03.2013</creationDate>
 	<author>Blechdose</author>
@@ -139,12 +139,11 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 		<filename>index.php</filename>
 		<filename>mobil.php</filename>
 		<filename>component.php</filename>
-		<filename>error.php</filename>
 		<filename>offline.php</filename>
 		<filename>index.html</filename>
+		<filename>params.ini</filename>
 		<filename>templateDetails.xml</filename>
 		<filename>template_thumbnail.png</filename>
-		<filename>template_preview.png</filename>
 		<filename>favicon.ico</filename>
 		<folder>html/</folder>
 		<folder>fonts/</folder>
@@ -172,140 +171,133 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 		<position>position-4</position>
 		<position>position-5</position>
   </positions>	
-  <languages folder="lib/language">
+  <languages folder="lib/language/site/">
                 <language tag="de-DE">de-DE/de-DE.tpl_surface.ini</language>
 				<language tag="en-GB">en-GB/en-GB.tpl_surface.ini</language>
   </languages>
-   <config>
-                <fields name="params" addfieldpath="/templates/surface/lib/elements/">
-                <fieldset name="Content" description="" label="CONTENT">
-				<field type="asset" path="templates/surface/lib/admin/" />
-                <field name="date" type="radio" default="1" label="PARAM_DATE" description="DESC_PARAM_DATE">
+  <administration>
+         <languages folder="lib/language/site/">
+				<language tag="de-DE">de-DE/de-DE.tpl_surface.ini</language>
+				<language tag="en-GB">en-GB/en-GB.tpl_surface.ini</language>
+         </languages>
+  </administration>
+   <params>
+                <params name="params" addparampath="/templates/surface/lib/elements/">
+				<param type="asset" path="templates/surface/lib/admin/" />
+                <param name="date" type="radio" default="1" label="PARAM_DATE" description="DESC_PARAM_DATE">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>			 
-                 <field name="timerrun" type="radio" default="0" label="PARAM_TIMER" description="DESC_PARAM_TIMER">
+                </param>			 
+                 <param name="timerrun" type="radio" default="0" label="PARAM_TIMER" description="DESC_PARAM_TIMER">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="beta_warnung" type="radio" default="1" label="PARAM_BETA" description="DESC_PARAM_BETA">
+                </param>
+				<param name="beta_warnung" type="radio" default="1" label="PARAM_BETA" description="DESC_PARAM_BETA">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="mainsheet_rounded" type="radio" default="0" label="PARAM_MAINSHEETROUNDED" description="DESC_PARAM_MAINSHEETROUNDED">
+                </param>
+				<param name="mainsheet_rounded" type="radio" default="0" label="PARAM_MAINSHEETROUNDED" description="DESC_PARAM_MAINSHEETROUNDED">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="page_title_default" type="radio" default="1" label="PARAM_TITLE_DEFAULT" description="DESC_PARAM_TITLE_DEFAULT">
+                </param>
+				<param name="page_title_default" type="radio" default="1" label="PARAM_TITLE_DEFAULT" description="DESC_PARAM_TITLE_DEFAULT">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="page_title" type="text" default="" label="PARAM_TITLE" description="DESC_PARAM_TITLE" size="40" />
-				<field name="size" type="text" default="12px" label="PARAM_SCHRIFT_FRONTEND" description="DESC_PARAM_SCHRIFT_FRONTEND"></field>
-				<field name="font_content" type="list" default="'Signika'" label="PARAM_FONTCONTENT" description="DESC_PARAM_FONTCONTENT">
+                </param>
+				<param name="page_title" type="text" default="" label="PARAM_TITLE" description="DESC_PARAM_TITLE" size="40" />
+				<param name="size" type="text" default="12px" label="PARAM_SCHRIFT_FRONTEND" description="DESC_PARAM_SCHRIFT_FRONTEND"></param>
+				<param name="font_content" type="list" default="'Signika'" label="PARAM_FONTCONTENT" description="DESC_PARAM_FONTCONTENT">
 						<option value="'Signika'">OPTION_DEFAULT</option>
                         <option value="Arial, Helvetica, Sans-Serif">OPTION_ARIAL</option>
                         <option value="Times New Roman, Georgia, Times, Serif">OPTION_TIMES</option>
 						<option value="Trebuchet MS, Arial, Helvetica, Sans-Serif">OPTION_TREBUCHET_MS</option>
 						<option value="Verdana, Geneva, sans-serif">OPTION_VERDANA</option>
 						<option value="Tahoma, Geneva, sans-serif">OPTION_TAHOMA</option>
-                </field>
-				<field name="left_column" type="text" default="17%" label="PARAM_LEFT_COLUMN" description="DESC_PARAM_LEFT_COLUMN" size="20"></field>
-				<field name="right_column" type="text" default="17%" label="PARAM_RIGHT_COLUMN" description="DESC_PARAM_RIGHT_COLUMN" size="20"></field>
-				<field name="main_column" type="text" default="60%" label="PARAM_MAIN_COLUMN" description="DESC_PARAM_MAIN_COLUMN" size="20"></field>
-				<field name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></field>	
-    			</fieldset>
+                </param>
+				<param name="left_column" type="text" default="17%" label="PARAM_LEFT_COLUMN" description="DESC_PARAM_LEFT_COLUMN" size="20"></param>
+				<param name="right_column" type="text" default="17%" label="PARAM_RIGHT_COLUMN" description="DESC_PARAM_RIGHT_COLUMN" size="20"></param>
+				<param name="main_column" type="text" default="60%" label="PARAM_MAIN_COLUMN" description="DESC_PARAM_MAIN_COLUMN" size="20"></param>
+				<param name="main_size" type="text" default="125px" label="PARAM_MAIN_SIZE" description="DESC_PARAM_MAIN_SIZE" size="20"></param>	
 				<!-- Farb-Menü -->
-				<fieldset name="farbmenu" description="" label="FARBMENU">
-				<field name="color_preset" type="list" default="1" label="PARAM_COLOR" description="DESC_PARAM_COLOR">
+				<param name="color_preset" type="list" default="1" label="PARAM_COLOR" description="DESC_PARAM_COLOR">
                         <option value="1">OPTION_DEFAULT</option>
                        	<option value="2">OPTION_GRUEN</option>
                         <option value="3">OPTION_BLAU</option>
 						<option value="4">OPTION_ROT</option>
-				</field>
-				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
-				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
-				<field name="band_color" type="text" default="#1E5799" label="PARAM_BAND_FARBE" description="DESC_PARAM_BAND_FARBE" class="color" size="20" />
-				<field name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />
-				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
+				</param>
+				<param name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
+				<param name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
+				<param name="band_color" type="text" default="#1E5799" label="PARAM_BAND_FARBE" description="DESC_PARAM_BAND_FARBE" class="color" size="20" />
+				<param name="dropdown_color" type="text" default="#F4F4F4" label="PARAM_DROPDOWN_FARBE" description="DESC_PARAM_DROPDOWN_FARBE" class="color" size="20" />
+				<param name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
                         <option value="1">OPTION_DEFAULT</option>
                        	<option value="2">OPTION_CSS3</option>
                         <option value="3">OPTION_AUS</option>
-				</field>
-				<field name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
-				<field name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
-				</fieldset>
+				</param>
+				<param name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
+				<param name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
 				
-				<fieldset name="javascripte" description="" label="JAVASCRIPTS">
-				<field name="fontsizeparam" type="radio" default="1" label="PARAM_FONTSIZE" description="DESC_PARAM_FONTSIZE">
+				<param name="fontsizeparam" type="radio" default="1" label="PARAM_FONTSIZE" description="DESC_PARAM_FONTSIZE">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                 </field>
-				 <field name="scrolling" type="radio" default="1" label="PARAM_SCROLL" description="DESC_PARAM_SCROLL">
+                 </param>
+				 <param name="scrolling" type="radio" default="1" label="PARAM_SCROLL" description="DESC_PARAM_SCROLL">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                 </field>
-				 <field name="link_animation" type="radio" default="1" label="PARAM_LINK_ANIMATION" description="DESC_PARAM_LINK_ANIMATION">
+                 </param>
+				 <param name="link_animation" type="radio" default="1" label="PARAM_LINK_ANIMATION" description="DESC_PARAM_LINK_ANIMATION">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="bild_animation" type="radio" default="0" label="PARAM_BILD_ANIMATION" description="DESC_PARAM_BILD_ANIMATION">
+                </param>
+				<param name="bild_animation" type="radio" default="0" label="PARAM_BILD_ANIMATION" description="DESC_PARAM_BILD_ANIMATION">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				 <field name="javascript" type="radio" default="1" label="PARAM_SCRIPT_LOAD" description="DESC_PARAM_SCRIPT_LOAD">
+                </param>
+				 <param name="javascript" type="radio" default="1" label="PARAM_SCRIPT_LOAD" description="DESC_PARAM_SCRIPT_LOAD">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				<field name="mootools" type="radio" default="0" label="PARAM_SCRIPT_MOO" description="DESC_PARAM_SCRIPT_MOO">
+                </param>
+				<param name="mootools" type="radio" default="0" label="PARAM_SCRIPT_MOO" description="DESC_PARAM_SCRIPT_MOO">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				 
-				</fieldset>
+                </param>
+				
 				<!-- Slider -->
-			 <fieldset name="javascript_slider_plugin" description="" label="JAVASCRIPT_SLIDER_PLUGIN">
-			 <field name="javascript_slider" type="list" default="1" label="PARAM_SLIDER" description="DESC_PARAM_SLIDER">
+			 <param name="javascript_slider" type="list" default="1" label="PARAM_SLIDER" description="DESC_PARAM_SLIDER">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
 						
-                </field>
-				<field name="javascript_slider_plugin_picture1" type="imagelist" default="slider1.jpg" label="PARAM_PLUGIN_SLIDER1" description="DESC_PARAM_PLUGIN_SLIDER1" directory="../templates/surface/images/slider/" />
-				<field name="javascript_slider_plugin_picture1_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER1_LINK" description="DESC_PARAM_PLUGIN_SLIDER1_LINK" size="40"></field>
-				<field name="javascript_slider_plugin_picture1_text" type="text" default="Sample Text" label="PARAM_PLUGIN_SLIDER1_TEXT" description="DESC_PARAM_PLUGIN_SLIDER1_TEXT" size="40"></field>
-				<field name="javascript_slider_plugin_picture2" type="imagelist" default="slider2.jpg" label="PARAM_PLUGIN_SLIDER2" description="DESC_PARAM_PLUGIN_SLIDER2" directory="../templates/surface/images/slider/" />
-				<field name="javascript_slider_plugin_picture2_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER2_LINK" description="DESC_PARAM_PLUGIN_SLIDER2_LINK" size="40" ></field>
-				<field name="javascript_slider_plugin_picture2_text" type="text" default="" label="PARAM_PLUGIN_SLIDER2_TEXT" description="DESC_PARAM_PLUGIN_SLIDER2_TEXT" size="40"></field>
-				<field name="javascript_slider_plugin_picture3" type="imagelist" default="slider3.jpg" label="PARAM_PLUGIN_SLIDER3" description="DESC_PARAM_PLUGIN_SLIDER3" directory="../templates/surface/images/slider/" />
-				<field name="javascript_slider_plugin_picture3_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER3_LINK" description="DESC_PARAM_PLUGIN_SLIDER3_LINK" size="40"></field>
-				<field name="javascript_slider_plugin_picture3_text" type="text" default="Lorum ipsorum Text" label="PARAM_PLUGIN_SLIDER3_TEXT" description="DESC_PARAM_PLUGIN_SLIDER3_TEXT" size="40"></field>
-			 <field name="anzeige_dauer" type="text" default="5000" label="PARAM_PLUGIN_SLIDER_ANZEIGE" description="DESC_PARAM_PLUGIN_SLIDER_ANZEIGE" size="20"></field>
-			 </fieldset>
+                </param>
+				<param name="javascript_slider_plugin_picture1" type="imagelist" default="slider1.jpg" label="PARAM_PLUGIN_SLIDER1" description="DESC_PARAM_PLUGIN_SLIDER1" directory="../templates/surface/images/slider/" />
+				<param name="javascript_slider_plugin_picture1_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER1_LINK" description="DESC_PARAM_PLUGIN_SLIDER1_LINK" size="40"></param>
+				<param name="javascript_slider_plugin_picture1_text" type="text" default="Sample Text" label="PARAM_PLUGIN_SLIDER1_TEXT" description="DESC_PARAM_PLUGIN_SLIDER1_TEXT" size="40"></param>
+				<param name="javascript_slider_plugin_picture2" type="imagelist" default="slider2.jpg" label="PARAM_PLUGIN_SLIDER2" description="DESC_PARAM_PLUGIN_SLIDER2" directory="../templates/surface/images/slider/" />
+				<param name="javascript_slider_plugin_picture2_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER2_LINK" description="DESC_PARAM_PLUGIN_SLIDER2_LINK" size="40" ></param>
+				<param name="javascript_slider_plugin_picture2_text" type="text" default="" label="PARAM_PLUGIN_SLIDER2_TEXT" description="DESC_PARAM_PLUGIN_SLIDER2_TEXT" size="40"></param>
+				<param name="javascript_slider_plugin_picture3" type="imagelist" default="slider3.jpg" label="PARAM_PLUGIN_SLIDER3" description="DESC_PARAM_PLUGIN_SLIDER3" directory="../templates/surface/images/slider/" />
+				<param name="javascript_slider_plugin_picture3_link" type="text" default="http://blechdose-live.de/" label="PARAM_PLUGIN_SLIDER3_LINK" description="DESC_PARAM_PLUGIN_SLIDER3_LINK" size="40"></param>
+				<param name="javascript_slider_plugin_picture3_text" type="text" default="Lorum ipsorum Text" label="PARAM_PLUGIN_SLIDER3_TEXT" description="DESC_PARAM_PLUGIN_SLIDER3_TEXT" size="40"></param>
+			 <param name="anzeige_dauer" type="text" default="5000" label="PARAM_PLUGIN_SLIDER_ANZEIGE" description="DESC_PARAM_PLUGIN_SLIDER_ANZEIGE" size="20"></param>
 			 <!-- Performance Menu -->
-			 <fieldset name="performance" description="" label="PERFORMANCE">
-				<field name="ie_support" type="list" default="1" label="PARAM_IE" description="DESC_PARAM_IE">
+				<param name="ie_support" type="list" default="1" label="PARAM_IE" description="DESC_PARAM_IE">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
 						<option value="2">OPTION_LEGACY</option>
-                </field>
-				<field name="mobil_support" type="list" default="1" label="PARAM_MOBIL" description="DESC_PARAM_MOBIL">
+                </param>
+				<param name="mobil_support" type="list" default="1" label="PARAM_MOBIL" description="DESC_PARAM_MOBIL">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                </field>
-				  <field name="kompression" type="radio" default="0" label="PARAM_COMP" description="DESC_PARAM_COMP">
+                </param>
+				  <param name="kompression" type="radio" default="0" label="PARAM_COMP" description="DESC_PARAM_COMP">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                  </field>
-				  <field name="gzip_kompression" type="radio" default="0" label="PARAM_GZIP_COMP" description="DESC_PARAM_GZIP_COMP">
+                  </param>
+				  <param name="gzip_kompression" type="radio" default="0" label="PARAM_GZIP_COMP" description="DESC_PARAM_GZIP_COMP">
                         <option value="1">OPTION_EIN</option>
                         <option value="0">OPTION_AUS</option>
-                  </field>
-			 </fieldset>
+                  </param>
 			 
 			<!-- Update -->
-			<fieldset name="surface_updates" addfieldpath="/templates/surface/lib/elements" label="SURFACE_UPDATES">
-			    <field type="update" name="surface_updates" /> 
-			</fieldset>
-  			</fields>
-        </config>
-</extension>
+			    <param type="update" name="surface_updates" /></param>
+        </params>
+</install>
