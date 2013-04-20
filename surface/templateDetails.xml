@@ -20,6 +20,7 @@
 						
 						// Keep those switches simple:
 						/* CSS3 Umschalter: */
+						
 						if(jQuery('#jform_params_image').val() == 2) {
 						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeIn();
 						}
@@ -27,35 +28,64 @@
 						jQuery('#jform_params_starting_color-lbl,#jform_params_starting_color,#jform_params_end_color-lbl,#jform_params_end_color,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
 						
 						}
+
 						/* Farb-Menü: */
+						
 						if(jQuery('#jform_params_color_preset').val() == 1) {
 						jQuery('#jform_params_con_bg_color-lbl,#jform_params_con_bg_color,#jform_params_module_color-lbl,#jform_params_module_color,#jform_params_band_color-lbl,#jform_params_band_color,#jform_params_dropdown_color-lbl,#jform_params_dropdown_color,#jforms_params_image-lbl,#jforms_params_image,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeIn();
 						}
 						else {
-						jQuery('#jform_params_con_bg_color-lbl,#jform_params_con_bg_color,#jform_params_module_color-lbl,#jform_params_module_color,#jform_params_band_color-lbl,#jform_params_band_color,#jform_params_dropdown_color-lbl,#jform_params_dropdown_color,#jforms_params_image-lbl,#jforms_params_image,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
+						//jQuery('#jform_params_con_bg_color-lbl,#jform_params_con_bg_color,#jform_params_module_color-lbl,#jform_params_module_color,#jform_params_band_color-lbl,#jform_params_band_color,#jform_params_dropdown_color-lbl,#jform_params_dropdown_color,#jforms_params_image-lbl,#jforms_params_image,#jform_params_html5_form-lbl,#jform_params_html5_form').fadeOut();
 						
 							/* Grün kommt hier hin: */
 							if(jQuery('#jform_params_color_preset').val() == 2) {
 								jQuery('#jform_params_con_bg_color').attr('value', '000000');
-								jQuery('#jform_params_module_color').attr('value', '000000');
-								jQuery('#jform_params_band_color').attr('value', '000000');
-								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								jQuery('#jform_params_con_bg_color').focus();
+								jQuery('#jform_params_module_color').attr('value', '2A8A15');
+								jQuery('#jform_params_module_color').focus();
+								jQuery('#jform_params_band_color').attr('value', '585959');
+								jQuery('#jform_params_band_color').focus();
+								jQuery('#jform_params_dropdown_color').attr('value', '0D190F');
+								jQuery('#jform_params_dropdown_color').focus();
+								jQuery('#jform_params_starting_color').attr('value', 'FFFFFF');
+								jQuery('#jform_params_starting_color').focus();
+								jQuery('#jform_params_end_color').attr('value', '2A8A15');
+								jQuery('#jform_params_end_color').focus();
+								jQuery('#jform_params_end_color').blur();
 								// FIXME: Update erfolgt erst bei Klick
 							}
 							/* Blau (Standard) kommt hier hin: */
 							if(jQuery('#jform_params_color_preset').val() == 3) {
 								jQuery('#jform_params_con_bg_color').attr('value', '000000');
-								jQuery('#jform_params_module_color').attr('value', '000000');
-								jQuery('#jform_params_band_color').attr('value', '000000');
-								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								jQuery('#jform_params_con_bg_color').focus();
+								jQuery('#jform_params_module_color').attr('value', '2C4D78');
+								jQuery('#jform_params_module_color').focus();
+								jQuery('#jform_params_band_color').attr('value', '4E86D1');
+								jQuery('#jform_params_band_color').focus();
+								jQuery('#jform_params_dropdown_color').attr('value', '0E4680');
+								jQuery('#jform_params_dropdown_color').focus();
+								jQuery('#jform_params_starting_color').attr('value', '4376B8');
+								jQuery('#jform_params_starting_color').focus();
+								jQuery('#jform_params_end_color').attr('value', '0C3969');
+								jQuery('#jform_params_end_color').focus();
+								jQuery('#jform_params_end_color').blur();
 								// FIXME: Update erfolgt erst bei Klick
 							}
 							/* Rot kommt hier hin: */
 							if(jQuery('#jform_params_color_preset').val() == 4) {
 								jQuery('#jform_params_con_bg_color').attr('value', '000000');
-								jQuery('#jform_params_module_color').attr('value', '000000');
-								jQuery('#jform_params_band_color').attr('value', '000000');
-								jQuery('#jform_params_dropdown_color').attr('value', '000000');
+								jQuery('#jform_params_con_bg_color').focus();
+								jQuery('#jform_params_module_color').attr('value', 'A81514');
+								jQuery('#jform_params_module_color').focus();
+								jQuery('#jform_params_band_color').attr('value', 'BF1817');
+								jQuery('#jform_params_band_color').focus();
+								jQuery('#jform_params_dropdown_color').attr('value', '660C0C');
+								jQuery('#jform_params_dropdown_color').focus();
+								jQuery('#jform_params_starting_color').attr('value', '9E1413');
+								jQuery('#jform_params_starting_color').focus();
+								jQuery('#jform_params_end_color').attr('value', '570B0A');
+								jQuery('#jform_params_end_color').focus();
+								jQuery('#jform_params_end_color').blur();
 								// FIXME: Update erfolgt erst bei Klick
 							}
 						}		
@@ -191,7 +221,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
                         <option value="1">OPTION_DEFAULT</option>
                        	<option value="2">OPTION_GRUEN</option>
                         <option value="3">OPTION_BLAU</option>
-						<option value="3">OPTION_ROT</option>
+						<option value="4">OPTION_ROT</option>
 				</field>
 				<field name="con_bg_color" type="text" default="#7db9e8" label="PARAM_FARBE" description="DESC_PARAM_FARBE" class="color" size="20" />
 				<field name="module_color" type="text" default="#1E5799" label="PARAM_MODULE_FARBE" description="DESC_PARAM_MODULE_FARBE" class="color" size="20" />
@@ -200,7 +230,7 @@ Parameter now available! <b>  You need help? Visit: <a href="http://www.blechdos
 				<field name="image" type="list" default="2" label="PARAM_BILDER" description="DESC_PARAM_BILDER">
                         <option value="1">OPTION_DEFAULT</option>
                        	<option value="2">OPTION_CSS3</option>
-                         <option value="3">OPTION_AUS</option>
+                        <option value="3">OPTION_AUS</option>
 				</field>
 				<field name="starting_color" type="text" default="#7db9e8" label="PARAM_STARTING_FARBE" description="DESC_PARAM_STARTING_FARBE" class="color" size="20" />
 				<field name="end_color" type="text" default="#1e5799" label="PARAM_END_FARBE" description="DESC_PARAM_END_FARBE" class="color" size="20" />
