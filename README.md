@@ -1,50 +1,17 @@
 Surface-Beta
 ============
 
-Surface Template Beta
-
-ToDo (Frontend)
+ToDo (Frontend/Backend)
 ============
 
-[*]Anpassung der Schriftarten
+[*]Add: Joomla 1.5 
+[*]Add: On/Off-Switch for mobile layout
+[*]Add: collapsing modules for mobile layout
+[*]Add: New tooltip pictures
 
-[*]Collapsing Modules
+[*]Fix: autofit in mobile layout
+[*]Fix: hover span.seperator in stripemenu
+[*]Fix: breadcrump only with css
+[*]Fix: delete unused files
 
-[*]Ersetzen der ^Top Grafik & des Dropdown-Pfeils
-
-[*]Hover von span.separator im StripeMenu
-
-[*]Suchintegration
-
-
-Changed (Frontend)
 ============
-
-[*]beidseitige Pfeile mit dynamischer Ausrichtung
-
-
-Requests
-============
-
-[*]Parameter für Schriftfarbe: Farbe Überschriften, Farbe Text, evtl. Farbe Link
-
-[*]Ein- & Ausschalten der Copyrightinfo
-
-[*]Möglichkeit zum Hochladen eines favicons
-
-[*]Parameter für Modulfarbe & Bandfarbe
-
-[*]Ausschalten StripeBackground mit ArrowLeft ermöglichen
-
-Fixed
-============
-
-[*] Überlappen von Slides + Title
-
-[*] Horizontaler Scrollbalken
-
-[*]modifiziertes Loginmodul
-
-[*]Accordionmenü (Hoververhalten)
-
-[*]Ausbrechen des Contents bei Schriftvergrößerung
