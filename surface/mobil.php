@@ -43,10 +43,10 @@ require_once dirname(__FILE__) . DS . '/lib/style.php';
     	    $('.MobileMenu').click(function() {
             var elem = $('.MobileMenuSelection');
        		 if (elem.css('display') == 'none') {
-             elem.slideDown(200);
+             elem.show();
         		}
        			  else {
-            	  elem.slideUp(200);
+            	  elem.hide();
         		}
     		});
 			});</script>";
